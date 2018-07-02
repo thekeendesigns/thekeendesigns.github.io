@@ -1,4 +1,4 @@
-/* Testin */
+/* Responsive Design*/
 @media only screen and (max-width: 768px) {
     h1,h2,h3,h4, {
       font-size:25px;
@@ -23,10 +23,49 @@
     }
 
     .slide-right {
-      text-align:center !important;
+      text-align:right !important;
+    }
+
+    .nav-list {
+      font-size:9px !important;
+      padding-left:5px !important;
+    }
+  
+    .site-title {
+      width: 30% !important;
+    }
+
+    .mobile-header {
+      display:none !important;
+    }
+
+    .spacer {
+      padding-top:90px !important;
     }
   
   }
+
+    /* For the Cool Peeps Using Google Chrome */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #591D95;
+  border-radius:7px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(101, 51, 151); 
+}
   
 /* Container Override for P */
   @media only screen and (max-width: 600px) {
@@ -91,12 +130,29 @@
     padding-left:0;
   }
 
-  
   .overlay-hover:hover {
     color:#ff7f00;
     transition:0.3s;
   }
   
+  figure {
+    text-align:center;
+    font-style:italic;
+  }
+
+  /* Scroll Indicator */
+
+  .progress-container {
+    width: 10%;
+    height: 5px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 5px;
+    background: #591D95;
+    width: 0%;
+  }
   
   /* Underline Reveal */
   .hvr-underline-reveal {
@@ -219,29 +275,63 @@
     font-weight:500;
   }
 
-  /*     Navbar      */
+  .opaque-title {
+    font-weight:800;
+    text-align: center;
+    font-size: 80px;
+    color:#fff;
+    text-shadow:1px 1px 10px #f4f4f4, 1px 1px 10px rgb(218, 218, 218);
+  }
 
-  .nav-title {
-  font-size:18px;
+/*     Navbar      */
+#global-nav {
+  position: fixed;
+  top: 0;
+  z-index:100000000 ;
+  height: 100px;
+  width: 100%;
+  color: rgb(50, 50, 50);
+  line-height: 100px;
+    -webkit-transition: height .5s ease, line-height .5s ease; /* Safari */
+    transition: height .5s ease, line-height .5s ease;
+}
+
+.site-title {
+  display: inline-block;
+  -webkit-transition: all .4s;
+    transition: all .4s;
+  width:50%;
+}
+
+.site-title:hover {
+  opacity:0.6;
+}
+
+.scrolled-nav .site-title {
+  width:30%;
+}
+
+.nav-list {
+  list-style: none;
+  font-size:20px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 40px;
   font-weight:600;
-  padding:10px;
-  margin-right:12px;
-  color:#ff7f00;
-  -webkit-transition:all 0.5s ease;
 }
 
-  .navbar ul li a:hover {
-  color:#ff7f00;
-  transition:0.3s;
-
+.scrolled-nav {
+  height: 60px !important;
+  line-height: 60px !important;
+  background-color:#fff;
+  -webkit-box-shadow: 0 5px 10px -5px #999;
+  -moz-box-shadow: 0 5px 10px -5px #999;
+  box-shadow: 0 5px 10px -5px #999;
 }
 
-  .navbar {
-  -webkit-box-shadow: 0 5px 8px -6px #999;
-  -moz-box-shadow: 0 5px 8px -6px #999;
-  box-shadow: 0 5px 8px -6px #999;
-
-}
 /*     Navbar      */
   
   /* Home Section */
@@ -249,6 +339,11 @@
  .spacer {
     padding-top: 60px;
     padding-bottom: 60px;
+ }
+
+ .side-gutter {
+   padding-left:15px;
+   padding-right:15px;
  }
 
  .bottom-spacer {
@@ -261,13 +356,18 @@
   /* Scroll Effect */
   
   .work-spacer {
-    padding-top:250px;
+    padding-top:150px;
   }
   
   .vivovii-pics {
     width:100%;
     height:auto 0;
-    
+  }
+
+  .persona-pic {
+    width:30%;
+    height:auto 0;
+
   }
 
   /* Next Feature */
@@ -280,19 +380,48 @@
   
   .background-deco {
     background-color:#f4f4f4;
+    width:100%;
+    height:auto 0;
   }
 
+  .next-spacer {
+    padding-top:10px;
+    padding-bottom:10px;
+  } 
+  
   .slide-right {
     text-align:right;
   }
 
-  .vivovii-project-hover {
+  .vivovii-back {
     -webkit-transition:all 0.7s ease
   }
 
-  .vivovii-project-hover:hover {
-    transition:0.4s;
-    color:#ff6338;
+  .vivovii-back:hover {
+    transition:0.9s;
+    background-color: #ffc4b4;
+  }
+
+  .mackenzie-back {
+    -webkit-transition:all 0.7s ease
+  }
+
+  .mackenzie-back:hover {
+    transition:0.9s;
+    background-color:rgb(225, 196, 255);
+  }
+
+  .arrow {
+    text-transform:uppercase;
+    font-size:14px;
+  }
+
+  .footer-nav > a:first-child {
+    text-align:left;
+  }
+
+  .footer-nav > a:last-child {
+    text-align:right;
   }
 
   /* Universal Footer */
@@ -315,3 +444,7 @@
     margin-left:30px;
     list-style:none;
   }
+
+ .resize-for-pages {
+   font-size:16px;
+ }

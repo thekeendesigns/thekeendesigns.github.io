@@ -24,15 +24,19 @@
     font-size:15px !important;
   }
 
-  .navbar {
-    display:none;
+  .hug {
+    padding-top:90px !important;
   }
 
-  .mini-profile-header {
-    width:30% !important;
-    height:auto 0 !important;
+  .nav-list {
+    font-size:9px !important;
+    padding-left:5px !important;
   }
 
+  .site-title {
+    width: 30% !important;
+  }
+  
 }
 
 @media only screen and (min-width: 1025px) {
@@ -65,7 +69,28 @@
     padding-top:35px !important;
   }
 
+}
 
+/* For the Cool Peeps Using Google Chrome */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f4f4f4; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff7f00;
+  border-radius:7px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9c3a; 
 }
 
 .work-thumbnail {
@@ -119,7 +144,7 @@ html {
 body {
   margin:0;
   color:#5C5C61;
-  border: solid 50px #f4f4f4;
+  
 }
 
 .no-gutter > [class*='navbar'] {
@@ -138,13 +163,10 @@ body {
 }
 
 figure {
-  font-style: italic;
-  text-align: center;
+  text-align:center;
+  font-style:italic;
 }
 
-figcaption {
-  padding-top:8px;
-}
 
 /* Underline Reveal */
 .hvr-underline-reveal {
@@ -221,46 +243,66 @@ a.link-vivovii:hover {
   color:#ff6338;
   text-decoration: none;
 }
-/*     Navbar      */
 
-.nav-title {
-  font-size:18px;
-  font-weight:600;
-  padding:10px;
-  margin-right:12px;
-  color:#ff7f00;
-  -webkit-transition:all 0.5s ease;
-}
-
-.navbar ul li a:hover {
-  color:#ff7f00;
-  transition:0.3s;
-
-}
-
-.navbar {
-  -webkit-box-shadow: 0 5px 8px -6px #999;
-  -moz-box-shadow: 0 5px 8px -6px #999;
-  box-shadow: 0 5px 8px -6px #999;
-
-}
 /*     Navbar      */
 
 /* Header */
 
-
-.mini-profile-header {
-  width:10%;
-  height:auto 0;
-  border-radius:50%;
+#global-nav {
+  position: fixed;
+  top: 0;
+  z-index:100000000 ;
+  height: 100px;
+  width: 100%;
+  color: rgb(50, 50, 50);
+  line-height: 100px;
+    -webkit-transition: height .5s ease, line-height .5s ease; /* Safari */
+    transition: height .5s ease, line-height .5s ease;
 }
+
+.site-title {
+  display: inline-block;
+  -webkit-transition: all .4s;
+    transition: all .4s;
+  width:50%;
+}
+
+.site-title:hover {
+  opacity:0.6;
+}
+
+.scrolled-nav .site-title {
+  width:30%;
+}
+
+.nav-list {
+  list-style: none;
+  font-size:20px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 40px;
+  font-weight:600;
+}
+
+.scrolled-nav {
+  height: 60px !important;
+  line-height: 60px !important;
+  background-color:#fff;
+  -webkit-box-shadow: 0 5px 10px -5px #999;
+  -moz-box-shadow: 0 5px 10px -5px #999;
+  box-shadow: 0 5px 10px -5px #999;
+}
+
 .body-text  {
   font-size: calc(0.8em + 1vw);
   color:#5C5C61;
 }
 
 .hug {
-  padding-top:90px;
+  padding-top:170px;
 }
 
 .header {
@@ -278,7 +320,7 @@ a.link-vivovii:hover {
 
 #section05 a span {
   position:absolute;
-  top: 35em;
+  top: 23em;
   left: 50%;
   width: 24px;
   height: 24px;
@@ -327,7 +369,7 @@ a.link-vivovii:hover {
 /* Scroll Effect */
 
 .work-spacer {
-  padding-top:250px;
+  padding-top:150px;
 }
 
 .vivovii-thumbnail {
@@ -459,14 +501,12 @@ box-shadow: 0px 0px 14px 2px rgba(0,92,255,1);
 
 .about-section {
   padding-top:25px;
-  
 }
 
 .background-deco {
   background-color:#f4f4f4;
   width:100%;
   height:100%;
-  
 }
 
 .h5-title {
