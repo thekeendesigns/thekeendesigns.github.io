@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html lang=en>
     <head>
-        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    
-            ga('create', 'UA-90792284-1', 'auto');
-            ga('send', 'pageview');
-        </script>
         <title>Kevin Keen</title>
         <meta charset="utf-8">
         <meta name="keywords" content="user interface, webdesign, app design, user experience, usability, development, wordpress, ui, ux">
@@ -43,26 +26,22 @@
 
     <!--      Navbar     -->
 
-    <div id="navigation">
-            <nav class="navbar navbar-expand-md navbar-expand-sm bg-white justify-content-center fixed-top">
-                    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-                        <ul class="navbar-nav w-100 justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link nav-title active" href="index.html">Design</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link nav-title" href="https://www.flickr.com/photos/151133486@N06/" target="_blank">Photos</a>
-                                </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-title" href="index.html#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link nav-title" href="assets/Kevin Keens Resume.pdf" target="_blank">Resume</a>
-                            </li>
-                        </ul>
-                    </div>
-            </nav>
-    </div>
+    <nav id="global-nav" class="nav">
+        <div class="container">
+          <div class="pull-left">
+              <a href="index.html">
+              <img src="assets/imgs/main-page/favicon.png" class="site-title">
+              </a>
+          </div>
+          <div class="pull-right">
+            <ul class="nav-list">
+              <li><a href="index.html#work-wrap" class="color-link hvr-underline-reveal">Design</a></li>
+              <li><a href="index.html#about" class="color-link hvr-underline-reveal">About</a></li>
+              <li><a href="assets/Kevin Keens Resume.pdf" target="_blank" class="color-link hvr-underline-reveal">Resume</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
                     
     <!--      Navbar     -->    
 
@@ -72,7 +51,7 @@
 
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12 mobile-header">
                     <img src="assets/imgs/vivovii/vivovii header.jpg" class="img-fluid vivovii-pics fadeInUp animated">
                 </div>
             </div>
@@ -286,28 +265,29 @@
             </div>
 
             <div class="container">
-                <div class="row">
+                <div class="row footer-nav">
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 behance-back next-spacer">
                         <a href="https://www.behance.net/kevinkeen9a8a1" target="_blank" class="color-link">
-                        <h3 class="mobile-text-shrink behance-project-hover"><i class="fa fa-arrow-left" style="margin-right: 5px;"></i>More Design Stuff</h3>
+                        <p class="arrow">< Previous</p>
+                        <h3 class="">More Design Stuff</h3>
                         </a>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 mackenzie-back next-spacer">
                         <a href="mackenzie.html" class="color-link">
-                        <h3 class="slide-right mobile-text-shrink mackenzie-hover">Mackenzie Health<i class="fa fa-arrow-right" style="margin-left:5px;"></i></h3>
+                        <p class="arrow slide-right">Next ></p>
+                        <h3 class="slide-right">Mackenzie Health</h3>
                         </a>
                     </div>
+
                 </div>
             </div>
 
     <!--     Next Project     -->
     
-    
-
-
     <!--     Footer      -->
+
     <section id="footer">
             
             <br>
@@ -345,16 +325,15 @@
     
                       <div class="footer-copyright py-3 text-center">
                           <div class="copyright-section">
-                              <p>Handcrafted since '18</p>
-                              <p>© Copyright Kevin Keen</p>
+                              <p class="resize-for-pages">Handcrafted since '18</p>
+                              <p class="resize-for-pages">© Copyright Kevin Keen</p>
                           </div>
                       </div>
         
         </div>
-                
-
           </section>
     <!--     Footer      -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/nav-animation.js"></script>
     </body>
 </html>

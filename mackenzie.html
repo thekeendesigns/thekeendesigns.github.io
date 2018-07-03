@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html lang=en>
     <head>
-        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    
-            ga('create', 'UA-90792284-1', 'auto');
-            ga('send', 'pageview');
-        </script>
         <title>Kevin Keen</title>
         <meta charset="utf-8">
         <meta name="keywords" content="user interface, webdesign, app design, user experience, usability, development, wordpress, ui, ux">
@@ -43,27 +26,23 @@
     
     <!--      Navbar     -->
 
-    <div id="navigation">
-    <nav class="navbar navbar-expand-md navbar-expand-sm bg-white justify-content-center fixed-top">
-            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-                <ul class="navbar-nav w-100 justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link nav-title" href="index.html">Design</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-title" href="https://www.flickr.com/photos/151133486@N06/" target="_blank">Photos</a>
-                        </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-title" href="index.html#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-title" href="assets/Kevin Keens Resume.pdf" target="_blank">Resume</a>
-                    </li>
+    <nav id="global-nav" class="nav">
+            <div class="container">
+              <div class="pull-left">
+                  <a href="index.html">
+                  <img src="assets/imgs/main-page/favicon.png" class="site-title">
+                  </a>
+              </div>
+              <div class="pull-right">
+                <ul class="nav-list">
+                  <li><a href="index.html#work-wrap" class="color-link hvr-underline-reveal">Design</a></li>
+                  <li><a href="index.html#about" class="color-link hvr-underline-reveal">About</a></li>
+                  <li><a href="assets/Kevin Keens Resume.pdf" target="_blank" class="color-link hvr-underline-reveal">Resume</a></li>
                 </ul>
+              </div>
             </div>
-    </nav>
-    </div>
-            
+          </nav>
+
     <!--      Navbar     -->
         
     <!--     Header      -->
@@ -72,7 +51,7 @@
 
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12 mobile-header">
                     <img src="assets/imgs/mackenzie-health/mackenzie header - Copy.jpg" class="img-fluid vivovii-pics fadeInUp animated">
                 </div>
             </div>
@@ -148,10 +127,10 @@
 
     <!--     Brainstorming       -->
 
-    <div class="container">
+        <div class="container">
             <div class="row no-gutter">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <img src="assets/imgs/mackenzie-health/hmw.jpg" class="img-fluid vivovii-pics">
+                    <img src="assets/imgs/mackenzie-health/hmw.jpg" class="img-fluid vivovii-pics" id="myImg">
                 </div>
             </div>
         </div>
@@ -170,22 +149,59 @@
 
     <!--     Decision       -->
 
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <img src="" class="img-fluid vivovii-pics fadeInUp animated">
+        <div class="background-deco">
+
+        <div class="container container-small">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 spacer">
+                    <h2 class="sprint-title text-center">Common Experiences</h2>
+                    <h2 class="section-title">Personas</h2>
+                    <p>We went back to our interview data and created three small personas to help bring out a major painpoint that each patient experiences.</p>
                 </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row no-gutter">
+                
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img src="assets/imgs/mackenzie-health/boy-persona.png" class="img-fluid persona-pic mx-auto d-block">
+                    <h2 class="section-title side-gutter">Roger Carls</h2>
+                    <p class="side-gutter">A frequent visitor to the hospital. He is currently in the process of chemotherapy, and needs to visit the hospital 2-3 times a week.</p>
+                    <h2 class="section-title side-gutter">Biggest Challenge</h2>
+                    <p class="side-gutter">Being sleep deprived and doing tests at weird hours of the night. Lack of orientation to the room and hospital. Lastly, feeling underengaged in his care.</p>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img src="assets/imgs/mackenzie-health/girl-persona.png" class="img-fluid persona-pic mx-auto d-block">
+                    <h2 class="section-title side-gutter">Alison Lee</h2>
+                    <p class="side-gutter">Rarely goes to the hospital. Went to the hospital recently due to a fractured arm.</p>
+                    <h2 class="section-title side-gutter">Biggest Challenge</h2>
+                    <p class="side-gutter">Not knowing when she can get seen by the doctor. Rude nurses rushing at tasks and overlooking patients who needed immediate care. </p>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img src="assets/imgs/mackenzie-health/boy-persona.png" class="img-fluid persona-pic mx-auto d-block">
+                    <h2 class="section-title side-gutter">John Celvito</h2>
+                    <p class="side-gutter">Works for the hospital as an ER nurse. He suffers from 'nurse burnout'.</p>
+                    <h2 class="section-title side-gutter">Biggest Challenge</h2>
+                    <p class="side-gutter">Having to deal with long-working hours and exposure to hazards while keeping a cool head and administering proper doses of medicine and performing the right procedure. </p>
+                </div>
+
             </div>
         </div>
 
         <div class="container container-small">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12 spacer">
-                    <h2 class="section-title">Icons</h2>
-                    <p>The icons involve the use of bevelled corners to match the current theme that vivovii has. The icons were designed around the purpose of bringing back a tech startup vibe. </p>
+                    <h2 class="section-title">Common Painpoint</h2>
+                    <p>The biggest painpoint that we noticed across all three personas, was that the patients felt <strong>anxious and uncertain</strong> at every point of interaction. From the initial arrival to the discharge, patients felt they were <strong>not in control</strong> and had to follow a strict procedure, leading to frustration with employees and medical tests.</p>
                 </div>
             </div>
         </div>
+
+        </div>
+        
 
     <!--     Decision       -->
 
@@ -194,7 +210,7 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <img src="assets/imgs/mackenzie-health/user flow.jpg" class="img-fluid vivovii-pics">
+                    <img src="assets/imgs/mackenzie-health/user flow.jpg" class="img-fluid vivovii-pics spacer">
                 </div>
             </div>
         </div>
@@ -202,8 +218,66 @@
         <div class="container container-small">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12 spacer">
-                    <h2 class="section-title">Web Interfaces</h2>
-                    <p>The web interface introduces an easier to read text, a strong call to action on the landing page, and a convenient yet savvy job list. The new redesign brings a sense of family and inclusive culture back into the company.</p>
+                    <h2 class="sprint-title text-center">Sprint 3: Design</h2>
+                    <h2 class="section-title">User Flow</h2>
+                    <p>We created a high-fidelity user flow. The user flow would allow our design for the app to be thorough, identifies errors at the start, and save time in our prototyping phase.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container-large spacer">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <h2 class="section-title">Reassurance</h2>
+                    <p>'Wait Times' would relieve any uncertainty as to when and where the patient was in their waiting process. It allows patients to leave the waiting room without missing their callout. Lastly, it shows current analytics of the waiting room, so incoming patients can be aware of approx. wait times.</p>
+                </div>
+
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <img src="assets/imgs/mackenzie-health/1st-Design-Analysis-(Wait-Times).png" class="img-fluid vivovii-pics">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container container-large spacer">
+            <div class="row">
+    
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <h2 class="section-title">Progression</h2>
+                    <p>We took inspiration from popular company Amazon and popular feature 'order tracking' to implement our own system tracking. Patients are notified which stage they are currently in. Not only does this relieve anxiety for patients but helps keep accuracy between both patient and caregiver.</p>
+                </div>
+    
+                <div class="col-md-8 col-sm-8 col-xs-12 zoom-img-wrap"> 
+                    <img src="assets/imgs/mackenzie-health/2st-Design-Analysis-(Progress).png" class="img-fluid vivovii-pics">
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="container container-large spacer">
+            <div class="row">
+    
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <h2 class="section-title">Some Sweet Visuals</h2>
+                    <p style="font-style:italic; color:#591D95;">"A journey of a thousand miles begins with a single step", -Lao Tsu</p>
+                    <p>When we apply this philosophy to digital products, the first few minutes if not seconds is crucial for users to establish a sense of trust and feel for the product. A great onboarding fulfills three criterias, it creates engagement, provides precious information, and lastly it provides a general greeting. This is what we accomplished within these handcrafted illustrations. </p>
+                </div>
+    
+                <div class="col-md-8 col-sm-8 col-xs-12 zoom-img-wrap">
+                    <figure>
+                    <img src="assets/imgs/mackenzie-health/3rd-Design-Analysis-(Nice-Illustrations) - Copy.png" class="img-fluid vivovii-pics">
+                    <figcaption>Illustrations done by <a class="orange-text" href="#">Lily Huang</a> and <a class="orange-text" href="#">Chris Tran</a>.</figcaption>
+                    </figure>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="opaque-title">All Screens</h1>
                 </div>
             </div>
         </div>
@@ -211,63 +285,12 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <img src="assets/imgs/vivovii/mobile interfaces 1st.jpg" class="img-fluid vivovii-pics">
-                </div>
-            </div>
-        </div>
-
-        <div class="container container-small">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 spacer">
-                    <h2 class="section-title">Mobile Interfaces</h2>
-                    <p>With great web design comes great mobile design. The mobile site will look different, because some aspects of the web would be difficult to translate into user-friendly interactions for mobile devices.<br><br> </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <img src="assets/imgs/vivovii/mobile interface analysis.jpg" class="img-fluid vivovii-pics">
-                </div>
-            </div>
-        </div>
-
-        <div class="container container-small">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 spacer">
-                    <h2 class="section-title">Important Changes</h2>
-                    <br>
-                    <h2 class="section-sub-title">Hierarchy of Information</h2>
-                    <p>I created a design that would allow for immediate information relay when users scroll through job openings. The main information is bolded followed by the 'requirements' body text using visuals to show secondary importance. </p>
-                    <h2 class="section-sub-title">Keeping Visuals Simple</h2>
-                    <p>When it comes to creating a info-packed page the most important goal is to get the content relayed before visuals. I decided to leave only the logo for the 'opportunities' section, since a picture would take up too much space, forcing users to scroll even more, which prolongs the access to context.</p>
+                    <img src="" class="img-fluid vivovii-pics">
                 </div>
             </div>
         </div>
 
     <!--    User Interface     -->
-
-    <!--     Prototype     -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <img src="assets/imgs/vivovii/prototype - Copy.gif" class="img-fluid vivovii-pics">
-                </div>
-            </div>
-        </div>
-
-        <div class="container container-small">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 spacer">
-                    <h2 class="section-title">Final Deliverable</h2>
-                    <p>vivovii is pioneering the modern consulting field with the use of leading research and technology to fulfill a happier life within the workforce. I delivered the final hi-fi prototype within 3 short days, and it seamlessly flows with their current branding, and hopefully that users can love.</p>
-                </div>
-            </div>
-        </div>
-
-    <!--     Prototype     -->
 
     <!--     Next Project     -->
 
@@ -284,27 +307,27 @@
             </div>
 
             <div class="container">
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <a href="vivovii.html" target="_blank" class="color-link">
-                        <h3 class="mobile-text-shrink vivovii-project-hover"><i class="fa fa-arrow-left" style="margin-right: 5px;"></i>vivovii</h3>
-                        </a>
+                    <div class="row footer-nav">
+    
+                        <div class="col-md-6 vivovii-back next-spacer">
+                            <a href="vivovii.html" class="color-link">
+                            <p class="arrow">< Previous</p>
+                            <h3 class="">vivovii</h3>
+                            </a>
+                        </div>
+    
+                        <div class="col-md-6 mackenzie-back next-spacer">
+                            <a href="mackenzie.html" class="color-link">
+                            <p class="arrow slide-right">Next ></p>
+                            <h3 class="slide-right">Mackenzie Health</h3>
+                            </a>
+                        </div>
+    
                     </div>
-
-                    <div class="col-md-6">
-                        <a href="#" class="color-link">
-                        <h3 class="slide-right mobile-text-shrink behance-project-hover">Behance My Journey<i class="fa fa-arrow-right" style="margin-left:5px;"></i></h3>
-                        </a>
-                    </div>
-                </div>
             </div>
 
     <!--     Next Project     -->
     
-    
-
-
     <!--     Footer      -->
     <section id="footer">
             
@@ -343,16 +366,17 @@
     
                       <div class="footer-copyright py-3 text-center">
                           <div class="copyright-section">
-                              <p>Handcrafted since '18</p>
-                              <p>© Copyright Kevin Keen</p>
+                              <p class="resize-for-pages">Handcrafted since '18</p>
+                              <p class="resize-for-pages">© Copyright Kevin Keen</p>
                           </div>
                       </div>
         
         </div>
-                
-
           </section>
     <!--     Footer      -->
 
+    <!--    Scripts     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/nav-animation.js"></script>
     </body>
 </html>
