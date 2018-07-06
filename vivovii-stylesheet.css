@@ -107,7 +107,7 @@
   z-index:100000000 ;
   height: 100px;
   width: 100%;
-  color: rgb(50, 50, 50);
+  color: #fff;
   line-height: 100px;
     -webkit-transition: height .5s ease, line-height .5s ease; /* Safari */
     transition: height .5s ease, line-height .5s ease;
@@ -138,15 +138,17 @@ li {
   display: inline-block;
   padding-left: 40px;
   font-weight:600;
+  color:#fff;
 }
 
 .scrolled-nav {
   height: 60px !important;
   line-height: 60px !important;
-  background-color:#fff;
+  background-color:rgba(255, 255, 255, 0.85);
   -webkit-box-shadow: 0 5px 10px -5px #999;
   -moz-box-shadow: 0 5px 10px -5px #999;
   box-shadow: 0 5px 10px -5px #999;
+  
 }
 
 
