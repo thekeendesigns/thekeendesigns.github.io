@@ -12,6 +12,10 @@
     font-size:2px !important;
   }
 
+  .body-text {
+    font-size: calc(1em + 2vw) !important;
+  }
+
   body {
     border:none !important;
   }
