@@ -37,6 +37,10 @@
     width: 30% !important;
   }
   
+  .body-text  {
+  font-size: calc(1em + 1vw);
+  }
+  
 }
 
 @media only screen and (min-width: 1025px) {
@@ -290,7 +294,7 @@ li {
 .scrolled-nav {
   height: 60px !important;
   line-height: 60px !important;
-  background-color:#fff;
+  background-color:rgba(255,255,255 0.85);
   -webkit-box-shadow: 0 5px 10px -5px #999;
   -moz-box-shadow: 0 5px 10px -5px #999;
   box-shadow: 0 5px 10px -5px #999;
