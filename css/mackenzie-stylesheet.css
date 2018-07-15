@@ -45,7 +45,7 @@
   
   }
 
-    /* For the Cool Peeps Using Google Chrome */
+/* For the Cool Peeps Using Google Chrome */
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
@@ -369,6 +369,75 @@ li {
     height:auto 0;
 
   }
+
+/* Ending Screen */
+
+  .mackenzie-right-float {
+    float:right;
+    width:30%;
+    margin-bottom:-450px;
+    position:relative;
+  }
+
+  .mackenzie-left-float {
+    float:left;
+    width:30%;
+    margin-top:-450px;
+    position:relative;
+  }
+
+  /* Responsive Section for Sprint 4: Reflection */
+  @media only screen and (max-width: 768px) {
+    .mackenzie-right-float {
+      display:none;
+    }
+
+    .mackenzie-left-float {
+      display:none;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .container-fluid  .row  .container-small {
+      width:400px;
+    }
+  }
+  
+  .contact-title {
+    letter-spacing:3px;
+    color:#591D95;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-weight:bold;
+    font-size:18px;
+    text-transform:uppercase;
+  }
+  
+  .btn {
+    background-color:#591D95;
+    border:none;
+    padding:15px 30px;
+    margin: 20px 40px;
+    border-radius:30px;
+  }
+
+  .btn:hover {
+    transform:translatey(-10px);
+    box-shadow:0 20px 15px -15px rgb(143, 143, 143);
+    background-color:rgb(103, 59, 146);
+  }
+
+  .btn-primary {
+    letter-spacing:1px;
+    font-weight:500;
+    text-transform:uppercase;
+    will-change: box-shadow, transform;
+    transition: all 0.2s
+    cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  
+
 
   /* Next Feature */
 
