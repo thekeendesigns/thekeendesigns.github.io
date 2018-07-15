@@ -28,11 +28,14 @@
 
     .nav-list {
       font-size:9px !important;
-      padding-left:5px !important;
     }
   
+    li {
+      padding-left:15px !important;
+    }
+    
     .site-title {
-      width: 30% !important;
+      width: 20% !important;
     }
 
     .mobile-header {

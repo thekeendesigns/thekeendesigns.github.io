@@ -1,4 +1,4 @@
-/* Testin */
+/* Responsive */
 @media only screen and (max-width: 768px) {
     h1,h2,h3,h4, {
       font-size:25px;
@@ -16,13 +16,16 @@
       text-align:right !important;
     }
 
+    li {
+      padding-left:15px !important;
+    }
+
     .nav-list {
       font-size:9px !important;
-      padding-left:5px !important;
     }
   
     .site-title {
-      width: 30% !important;
+      width: 20% !important;
     }
 
     .mobile-header {
