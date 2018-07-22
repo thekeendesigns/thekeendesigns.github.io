@@ -574,3 +574,94 @@ box-shadow: 0px 0px 14px 2px rgba(0,92,255,1);
   margin-left:30px;
   list-style:none;
 }
+
+/* 404 Page */
+
+@media only screen and (max-width: 768px) {
+  .ui-container {
+    padding:0px!important;
+    text-align:center !important;
+  }
+
+  .super-droid-title {
+    font-size:25px !important;
+    padding:0 20px !important;
+  }
+
+  .droid-title {
+    font-size:15px !important;
+  }
+
+  .droid-text {
+    font-size:15px !important;
+    padding:0 30px !important;
+  }
+
+  .droid-image {
+    max-width:800px;
+    display:block;
+    margin:auto;
+    padding:50px 0 !important;
+  }
+}
+
+.full-fit {
+  height:100vh;
+}
+
+.ui-container {
+  margin:0 auto;
+  padding:0 150px;
+  text-align:center;
+}
+
+.droid-image {
+  align-content: center;
+  max-width:800px;
+  display:block;
+  margin:auto;
+  padding:70px 0;
+}
+
+.super-droid-title {
+  text-align:center;
+  font-size:45px;
+  padding:10px 0;
+}
+
+.droid-title {
+  font-size:25px;
+  text-align:center;
+  padding:10px 0;
+}
+
+.droid-text {
+  font-size: 20px;
+  text-align:center;
+  width:500px;
+  max-width:100%;
+  margin:0 auto;
+}
+
+.btn {
+  background-color:#ff6338;
+  border:none;
+  padding:15px 30px;
+  margin: 20px 40px;
+  border-radius:30px;
+}
+
+.btn:hover {
+  transform:translatey(-10px);
+  box-shadow:0 20px 15px -15px rgb(143, 143, 143);
+  background-color:#ff6338;
+}
+
+.btn-primary {
+  letter-spacing:1px;
+  font-weight:500;
+  text-transform:uppercase;
+  will-change: box-shadow, transform;
+  transition: all 0.2s
+  cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
