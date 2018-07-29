@@ -1,5 +1,5 @@
 /* Responsive Design :) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   h1,h2,h3,h4, {
     font-size:25px;
   }
@@ -52,16 +52,7 @@
   .work-bottom {
     padding-bottom:0px !important;
   }
-  
-}
 
-@media only screen and (min-width: 1025px) {
-  .tablet-responsive {
-    display:none;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
   .mobile-responsive {
     display:none;
   }
@@ -74,17 +65,23 @@
   .mackenzie-title {
     padding-top:35px !important;
   }
+  
+}
+
+@media only screen and (min-width: 1025px) {
+  .tablet-responsive {
+    display:none;
+    font-size:20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-
   .work-spacer {
     padding-top:10px !important;
   }
   .mackenzie-title {
     padding-top:35px !important;
   }
-
 }
 
 /* For the Cool Peeps Using Google Chrome */
@@ -382,6 +379,8 @@ li {
 /* Scroll Effect */
 .fadein {
   opacity:0;
+  -webkit-transition:0.8s; /* Safari */
+    transition: 0.8s;
 }
 /* Scroll Effect */
 
