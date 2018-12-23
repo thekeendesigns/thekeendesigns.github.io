@@ -1,9 +1,3 @@
-@media only screen and (max-width: 1024px) {
-  .hug {
-    padding-top:90px !important;
-  }
-}
-
 .work-thumbnail {
   position:relative;
   display: block;
@@ -29,13 +23,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-rendering: optimizeLegibility;
-  /* set base font size to 16px */
-  font-size: 100%; 
+  font-size: 16px; 
   margin:0;
   padding:0; 
   font-family: 'Ubuntu', 'sans-serif';
 }
-
 body {
   margin:0;
   color:#5C5C61;
@@ -43,10 +35,6 @@ body {
 .no-gutter > [class*='container'] {
   padding-right:0;
   padding-left:0;
-}
-.flex-container {
-  flex-wrap:nowrap;
-  -webkit-flex-wrap: nowrap;
 }
 .overlay-hover:hover {
   color:#ff7f00;
@@ -93,6 +81,7 @@ a.link-vivovii:hover {
   color:#ff6338;
   text-decoration: none;
 }
+/* Override Bootstrap a */
 
 /*     Navbar      */
 .global-nav {
@@ -143,17 +132,6 @@ a .site-title {
 }
 /*     Navbar      */
 
-.body-text  {
-  font-size: calc(0.7em + 1vw);
-  color:#5C5C61;
-}
-.hug {
-  padding-top:170px;
-}
-.orange-kevin {
-  color:#ff7f00;
-}
-
 /* Scroll Effect */
 .fadein {
   opacity:0;
@@ -162,6 +140,7 @@ a .site-title {
   transition: 0.8s;
 }
 /* Scroll Effect */
+
 .link-vivovii {
   color:#ff6338;
 }
@@ -332,7 +311,7 @@ h4 {
   font-size: 1.5rem;
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight:500;
   margin-top: .5rem;
   margin-bottom: .5rem;
@@ -343,6 +322,7 @@ h2 {
 }
 h1 {
   font-size: 5rem;
+  font-weight: 600;
 }
 /* Text */
 
@@ -350,6 +330,9 @@ h1 {
   padding-right: 2rem;
   padding-left: 2rem;
   padding-top: 3.5rem;
+}
+.Home {
+  padding-top: 6rem;
 }
 .container .hello {
   height:70%;
@@ -562,6 +545,9 @@ a:hover .side-projects-link:before {
 }
 
 @media screen and (max-width: 425px) {
+  .Home .name {
+    font-size: 3.5em;
+  }
   .work-thumbnail {
     margin-bottom: 280px;
   }
