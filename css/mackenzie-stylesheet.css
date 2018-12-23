@@ -18,32 +18,12 @@
       text-align: center !important;
     }
 
-    .navbar {
-      display:none;
-    }
-
     .slide-right {
       text-align:right !important;
     }
 
-    .nav-list {
-      font-size:9px !important;
-    }
-  
-    li {
-      padding-left:15px !important;
-    }
-    
-    .site-title {
-      width: 20% !important;
-    }
-
-    .mobile-header {
-      display:none !important;
-    }
-
     .spacer {
-      padding-top:90px !important;
+      padding: 3em 1em;
     }
   
   }
@@ -69,7 +49,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(101, 51, 151); 
 }
-  
+
 /* Container Override for P */
   @media only screen and (max-width: 600px) {
     .work-spacer {
@@ -155,40 +135,6 @@
     height: 5px;
     background: #591D95;
     width: 0%;
-  }
-  
-  /* Underline Reveal */
-  .hvr-underline-reveal {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hvr-underline-reveal:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #ff7f00;
-    height: 4px;
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
   }
   
   /* Strike */
@@ -287,52 +233,51 @@
   }
 
 /*     Navbar      */
-#global-nav {
+.global-nav {
   position: fixed;
   top: 0;
-  z-index:100000000 ;
-  height: 100px;
-  width: 100%;
-  color: rgb(50, 50, 50);
-  line-height: 100px;
-    -webkit-transition: height .5s ease, line-height .5s ease; /* Safari */
-    transition: height .5s ease, line-height .5s ease;
+  left: 0;
+  right: 0;
+  background: transparent;
+  z-index: 10;
+  -webkit-transition: height .5s ease, line-height .5s ease; /* Safari */
+  transition: box-shadow .5s ease, background .5s ease;
 }
-
-.site-title {
-  display: inline-block;
+.global-nav > .container {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 20px 0;
+  transition: padding .5s ease;
+}
+.global-nav.-collapse {
+  box-shadow: 0 0 5px #ddd;
+  background: #fff;
+  opacity: 0.8;
+}
+.global-nav.-collapse > .container {
+  padding: 8px 60px;
+}
+a .site-title {
+  vertical-align: -webkit-baseline-middle;
   -webkit-transition: all .4s;
-    transition: all .4s;
-  width:50%;
+  transition: all .4s;
+  width:40%;
 }
-
 .site-title:hover {
   opacity:0.6;
 }
-
-.scrolled-nav .site-title {
-  width:30%;
-}
-
 .nav-list {
   list-style: none;
-  font-size:20px;
+  font-size:1.2rem;
+  justify-content: space-between;
 }
-
-li {
-  list-style: none;
+.link {
   display: inline-block;
-  padding-left: 40px;
+  margin: 8px 20px;
   font-weight:600;
-}
-
-.scrolled-nav {
-  height: 60px !important;
-  line-height: 60px !important;
-  background-color:rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: 0 5px 10px -5px #999;
-  -moz-box-shadow: 0 5px 10px -5px #999;
-  box-shadow: 0 5px 10px -5px #999;
 }
 
 /*     Navbar      */
@@ -438,10 +383,6 @@ li {
     transition: all 0.2s
     cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  
-
-
   /* Next Feature */
 
   .size-reduce {
@@ -520,3 +461,20 @@ li {
  .resize-for-pages {
    font-size:16px;
  }
+
+ @media screen and (max-width: 425px) {
+  .global-nav >.container {
+    padding: 15px;
+  }
+  .global-nav.-collapse > .container {
+    padding: 2px 20px;
+  }
+  .nav-list {
+    text-align:right;
+  }
+  .nav-list > .link {
+    display: block;
+    margin: 7px 8px;
+    font-size: .9em;
+  }
+}
