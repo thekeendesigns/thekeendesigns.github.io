@@ -500,6 +500,9 @@ span img {
   font-size: 1.5rem;
   font-weight: 600;
 }
+.remover .row {
+  flex-wrap: nowrap;
+}
 .framework {
   padding: 2em 0;
 }
@@ -521,14 +524,11 @@ span img {
 .about-me-writing {
   padding-top:40px;
 }
-.about-writing {
-  font-size:17px;
-  align-content: center;
-}
 .about-section {
   padding-top:45px;
 }
 .h5-title {
+  padding: 1em 0;
   text-transform: uppercase;
   font-size: 14px;
   color:rgb(147, 147, 148);
