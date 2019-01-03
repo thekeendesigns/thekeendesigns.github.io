@@ -3,52 +3,24 @@
     h1,h2,h3,h4, {
       font-size:25px;
     }
-  
     h5 {
       font-size:14px;
     }
-    
     .section-aligner{
         padding-top:50px !important;
     }
-
     .mobile-text-shrink {
       font-size:25px;
       padding-top: 25px;
       text-align: center !important;
     }
-
     .slide-right {
       text-align:right !important;
     }
-
     .spacer {
       padding: 3em 1em;
     }
-  
   }
-
-/* For the Cool Peeps Using Google Chrome */
-/* width */
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #fff; 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #591D95;
-  border-radius:7px; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(101, 51, 151); 
-}
 
 /* Container Override for P */
   @media only screen and (max-width: 600px) {
@@ -60,7 +32,6 @@
     .container-small {
         width: 400px;
     }
-
     .container-large {
       width:800px
     }
@@ -70,7 +41,6 @@
    .container-small {
      width: 600px;
    }
-
    .container-large {
     width:1000px
   }
@@ -80,7 +50,6 @@
     .container-small {
         width: 700px;
     }
-
     .container-large {
       width:1440px
     }
@@ -102,22 +71,18 @@
     padding:0; 
     font-family: 'Ubuntu', 'sans-serif';
   }
-  
   body {
     margin:0;
     color:#5C5C61;
   }
-  
   .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
   }
-
   .overlay-hover:hover {
     color:#ff7f00;
     transition:0.3s;
   }
-  
   figure {
     text-align:center;
     font-style:italic;
@@ -130,7 +95,6 @@
     height: 5px;
     background: #ccc;
   }
-  
   .progress-bar {
     height: 5px;
     background: #591D95;
@@ -159,71 +123,56 @@
     animation: strike .40s ease-in-out forwards;
   }
 
-
   /* Override Bootstrap a */
   a.color-link {
     color:rgb(50, 50, 50);
     text-decoration:none;
     -webkit-transition:all 0.7s ease
   }
-  
   a.nav-link {
     color:#5C5C61;
     -webkit-transition:all 0.7s ease
   }
-  
   a.orange-text {
     color:#ff7f00;
     text-decoration:none
   }
-  
   a.link-vivovii:hover {
     color:#ff6338;
     text-decoration: none;
     -webkit-transition:all 0.7s ease
   }
-  /* Format Styles */
-  .section-aligner {
-    padding-top:112px;
-  }
 
   /* Text Styles */
-
   p {
     font-size:20px;
     font-weight:400;
   }
-
   .section-title {
     font-size:20px;
     font-weight:500; 
     padding-top:15px;
     color:rgb(50, 50, 50);
   }
-
   .section-sub-title {
     font-size:28px;
     font-weight:500;
     color:rgb(50, 50, 50);
   }
-
   .sprint-title {
     color:#591D95;
     font-size:30px;
     font-weight:700;
     padding:10px;
   }
-
   .work-title {
     font-size:50px;
     font-weight:800;
   }
-
   .work-motto {
     font-size:27px;
     font-weight:500;
   }
-
   .opaque-title {
     font-weight:800;
     text-align: center;
@@ -282,36 +231,31 @@ a .site-title {
 
 /*     Navbar      */
   
-  /* Home Section */
-  
+/* Home Section */
  .spacer {
     padding-top: 60px;
     padding-bottom: 60px;
- }
-
+}
  .side-gutter {
    padding-left:15px;
    padding-right:15px;
- }
-
+}
  .bottom-spacer {
   padding-bottom: 60px;
 }
+
   /* Scroll Effect */
   .fadein {
     opacity:0;
   }
   /* Scroll Effect */
-  
   .work-spacer {
     padding-top:150px;
   }
-  
   .vivovii-pics {
     width:100%;
     height:auto 0;
   }
-
   .persona-pic {
     width:30%;
     height:auto 0;
@@ -319,14 +263,12 @@ a .site-title {
   }
 
 /* Ending Screen */
-
   .mackenzie-right-float {
     float:right;
     width:30%;
     margin-bottom:-450px;
     position:relative;
   }
-
   .mackenzie-left-float {
     float:left;
     width:30%;
@@ -339,7 +281,6 @@ a .site-title {
     .mackenzie-right-float {
       display:none;
     }
-
     .mackenzie-left-float {
       display:none;
     }
@@ -360,7 +301,6 @@ a .site-title {
     font-size:18px;
     text-transform:uppercase;
   }
-  
   .btn {
     background-color:#591D95;
     border:none;
@@ -368,13 +308,11 @@ a .site-title {
     margin: 20px 40px;
     border-radius:30px;
   }
-
   .btn:hover {
     transform:translatey(-10px);
     box-shadow:0 20px 15px -15px rgb(143, 143, 143);
     background-color:rgb(103, 59, 146);
   }
-
   .btn-primary {
     letter-spacing:1px;
     font-weight:500;
@@ -383,84 +321,70 @@ a .site-title {
     transition: all 0.2s
     cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  /* Next Feature */
 
+  /* Next Feature */
   .size-reduce {
     width:50%;
     height:auto 0;
     align-items:center;
   }
-  
   .background-deco {
     background-color:#f4f4f4;
     width:100%;
     height:auto 0;
   }
-
   .next-spacer {
     padding-top:10px;
     padding-bottom:10px;
   } 
-  
   .slide-right {
     text-align:right;
   }
-
   .vivovii-back {
     -webkit-transition:all 0.7s ease
   }
-
   .vivovii-back:hover {
     transition:0.9s;
     background-color: #ffc4b4;
   }
-
   .behance-back {
     -webkit-transition:all 0.7s ease
   }
-
   .behance-back:hover {
     transition:0.9s;
     background-color: rgb(191, 215, 255);
   }
-
   .arrow {
     text-transform:uppercase;
     font-size:14px;
   }
-
   .footer-nav > a:first-child {
     text-align:left;
   }
-
   .footer-nav > a:last-child {
     text-align:right;
   }
 
   /* Universal Footer */
-  
   .social-links {
     display:inline;
     margin-left:80px;
   }
-  
   .social-links ul li {
     list-style:none;
   }
-  
   .copyright-section {
     color:rgb(161, 161, 161);
     line-height:16px;
   }
-  
   .social-list {
     margin-left:30px;
     list-style:none;
   }
-
  .resize-for-pages {
+   margin-bottom: 1.8rem;
    font-size:16px;
- }
+  }
 
  @media screen and (max-width: 425px) {
   .global-nav >.container {
