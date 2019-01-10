@@ -1,1 +1,20 @@
-var _0x64e6=["\x50\x6C\x65\x61\x73\x65\x20\x45\x6E\x74\x65\x72\x20\x59\x6F\x75\x72\x20\x50\x61\x73\x73\x77\x6F\x72\x64","","\x67\x6F","\x47\x6F\x6F\x67\x6C\x65\x42\x65\x73\x74\x31\x32\x33\x21","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x74\x68\x65\x6B\x65\x65\x6E\x64\x65\x73\x69\x67\x6E\x73\x2E\x67\x69\x74\x68\x75\x62\x2E\x69\x6F\x2F\x67\x6F\x6F\x67\x6C\x65\x2D\x64\x65\x73\x69\x67\x6E\x2E\x68\x74\x6D\x6C","\x5F\x73\x65\x6C\x66","\x6F\x70\x65\x6E","\x41\x63\x63\x65\x73\x73\x20\x44\x65\x6E\x69\x65\x64\x20\x2D\x20\x50\x61\x73\x73\x77\x6F\x72\x64\x20\x49\x6E\x63\x6F\x72\x72\x65\x63\x74\x2C\x20\x50\x6C\x65\x61\x73\x65\x20\x54\x72\x79\x20\x41\x67\x61\x69\x6E","\x74\x6F\x4C\x6F\x77\x65\x72\x43\x61\x73\x65","\x67\x6F\x6F\x67\x6C\x65","\x20"];function passWord(){var _0xcca8x2=1;var _0xcca8x3=prompt(_0x64e6[0],_0x64e6[1]);while(_0xcca8x2<= 3){if(!_0xcca8x3){history[_0x64e6[2]](-1)};if(_0xcca8x3== _0x64e6[3]){window[_0x64e6[6]](_0x64e6[4],_0x64e6[5]);break};var _0xcca8x3=prompt(_0x64e6[7],_0x64e6[1]);_0xcca8x2+= 1};if(_0xcca8x3[_0x64e6[8]]()!= _0x64e6[9]& _0xcca8x2== 3){history[_0x64e6[2]](-1);return _0x64e6[10]}}
+function passWord() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Your Password','');
+
+    while (testV <= 3) {
+        if (!pass1) 
+            history.go(-1); // goes back one step
+        if (pass1 == 'GoogleBest123!') {
+            window.open('https://thekeendesigns.github.io/google-design.html','_self'); // opens new page, '_self' = opens in same tab
+            break;
+        }
+        var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again', '');  
+        testV += 1;
+    }
+
+    if (pass1.toLowerCase()!="google" & testV == 3) { // if user gets pass correct on last try, cancel other if()
+    history.go(-1);
+    return " ";
+    }
+}
