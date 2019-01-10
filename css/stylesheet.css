@@ -247,6 +247,12 @@ h1 {
 .project-text-link .project-blurb h2,.project-content-text{
   color:#323232;
 }
+.green .fa-long-arrow-right {
+  color:#34A853;
+}
+.green h5 {
+  color:#34A853;
+}
 .orange .fa-long-arrow-right {
   color:#ff6338;
 }
@@ -258,6 +264,9 @@ h1 {
 }
 .purple h5 {
   color:#591D95;
+}
+.project-blurb.green:hover {
+  background-color:#34A853;
 }
 .project-blurb.orange:hover {
   background-color:#ff6338;
@@ -510,6 +519,26 @@ span img {
 .list li {
   margin: .5em 0;
   line-height: 1.4em;
+}
+/* Google Password Page Style */
+.pass-center {
+  margin: auto;
+  max-width: 600px;
+}
+.pass-center h1 {
+  font-size: 52px;
+}
+.pass-center p {
+  padding-right: 90px;
+}
+.pass-center button {
+  padding: 10px 10px;
+  margin-top: 20px;
+  color: #34A853;
+  background-color: transparent;
+  border: 1px #34A853 solid ;
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* About */
