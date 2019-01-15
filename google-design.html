@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <!--MY CSS-->
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link href="css/zoom.css" rel="stylesheet">
         <!--Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:700|Open+Sans:400,700" rel="stylesheet">
         <!--Animate CSS-->
@@ -34,7 +35,386 @@
             </nav>
         </div>
     </header>
+
+    <section id="google-header">
+        <div class="container">
+            <div class="row work-title no-gutter">
+                <h1 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    Google Design Exercise 
+                </h1>
+            </div>
+            <div class="row sub-title">
+                <p class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2dot5 col-lg-7 google-space">
+                    Tasked with creating a seamless experience for searching, starting, and joining a club (or two) on campus.
+                </p>
+            </div>
+        </div>   
+    </section>
+
+    <div id="sum">
+        <div class="container project-body">
+            <div class="row col-md-9">
+                <h5 class="google">Process</h5>
+                <h2>Heuristic Research</h2>
+                <p>Before jumping straight into the user flow and mockups, I started with doing some research on club pages from the University of Waterloo, UCLA, and George Brown College. I chose a University from Canada,
+                    a University from USA, and a College from Canada to get a broad scope of how clubs were running in different environments. For all three sites, the task was to; search for a club of interest, join a club and start a club application (starting and joining a club was limited due to student logins/portals). This is what I noticed after 'stress' testing each site, within my capabilities.
+                </p>
+            </div>
+            <hr width="70%">
+            <div class="row col-md-9">
+                <h2>- University of Waterloo</h2>
+                <p>Being my own university, I tried my best to ignore biases, as that would have impacted the user testing. From the general observations;</p>
+            </div>
+            <div class="row">
+                <ul class="col-lg-offset-1 list">
+                    <li>Clubs/councils were run by a student body group called Feds.</li>
+                    <li>Seperate pages for club lists, starting a club, and a forms page.</li>
+                    <li>On the general clubs page, a section showcases awards from clubs, and external events held by Feds.</li>
+                </ul>
+            </div>
+            <div class="row project-feature">
+                <div class="col-md-6">
+                    <h3>Joining a club</h3>
+                    <ul class="list">
+                        <li>This setup is bias towards clubs that start with the letter A, as these clubs would get initial viewings from visitors.</li>
+                        <li>Long interaction for users who are just curious about clubs, but have to constantly scroll and load multiples pages to get to other clubs that don't start with A.</li>
+                        <li>No visual context about the club, however this may be a development constraint, as loading multiple images slows down page creation.</li>
+                        <li>Hard to tell whether sub-headings are a seperate club or belong to the main club.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/imgs/google-ex/initial_page_general.png" class="img-fluid google-work-images" data-action="zoom">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/imgs/google-ex/clubs_listing_initial_page.png" class="img-fluid google-work-images" data-action="zoom">
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/imgs/google-ex/club_and_sub-clubs.png" class="img-fluid google-work-images" data-action="zoom">
+                    <p class="caption">Main club, with sub groups</p>
+                </div>
+            </div>
+            <div class="row project-feature">
+                <div class="col-md-6">
+                    <h3>Filling out forms</h3>
+                    <ul class="list">
+                        <li>Many forms presented to user, but which ones are mandatory forms?</li>
+                        <li>Do you need approval of one form before starting the next form?</li>
+                        <li>Missing avenue for someone to submit completed files online. Do you have to submit these forms physically? Can it be done electronically?</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/imgs/google-ex/Forms_page.png" class="img-fluid google-work-images" data-action="zoom">
+                </div>
+                <div class="row button-center">
+                    <button id="toggle" data-text-swap="Close" data-text-original="View more research" class="btn btn-primary" onclick="hideResearch()">View more research</button>
+                </div>
+            </div>
+            <hr width="70%">
+            <div id="toggle-hide" style="display: none;">
+                <div class="row col-md-8">
+                    <h2>- UCLA</h2>
+                    <p>UCLA was my first hand try at testing an American clubs page, these were the results that came from it;</p>
+                </div>
+                <div class="row">
+                    <ul class="col-lg-offset-1 list">
+                        <li>Different clubs listing design, compared to other schools.</li>
+                        <li>Hard to find the clubs page from initial website, and even harder to navigate to creating a club within the clubs page.</li>
+                        <li>On initial search, clubs page was difficult to find.</li>
+                    </ul>
+                </div>
+                <div class="row project-feature">
+                    <div class="col-md-8">
+                        <h3>Viewing clubs</h3>
+                        <ul class="list">
+                            <li>Each description displays its respected Signatories which is weird and not needed to be made public.</li>
+                            <li>No references to the clubs social media accounts.</li>
+                            <li>The member types include; Undergrads, Grads, Grads/Undergrads, and Staff/Admin/Faculty. However when filtered on graduates, the same clubs for undergrads appear as well, which makes the option of undergrads/grads useless.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/imgs/google-ex/clubs_listing.png" class="img-fluid google-work-images" data-action="zoom">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/imgs/google-ex/search_bar.png" class="img-fluid google-work-images" data-action="zoom">
+                        <p class="caption">Search bar function</p>
+                        <img src="assets/imgs/google-ex/club_description.png" class="img-fluid google-work-images" data-action="zoom">
+                        <p class="caption">Club descriptions</p>
+                    </div>
+                </div>
+                <div class="row project-feature">
+                    <div class="col-md-6">
+                        <h3>Starting a club</h3>
+                        <ul class="list">
+                            <li>There are two registration processes. One for re-registration and another for new-registration. However, the headers are very small for someone quickly glancing to tell, and the box separation makes it even harder for users to follow. Do they start from left - right? Or are they separate steps for separate process?</li>
+                            <li>The pictures that are very difficult to read and have no reference to where the user shoud look.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/imgs/google-ex/ucla_starting.png" class="img-fluid google-work-images" data-action="zoom">
+                    </div>
+                </div>
+                <hr width="70%">
+                <div class="row col-md-8">
+                    <h2>- George Brown College</h2>
+                    <p>Colleges are known for their many hands-on technical programs. Examining colleges (A.K.A community colleges) allowed me to gain a  broader perception of clubs/councils at all levels of post-secondary education.</p>
+                </div>
+                <ul class="col-lg-offset-1 list">
+                    <li>No club search function</li>
+                    <li>Not much information displayed for each club.</li>
+                    <li>Club introduction, application, and directory are all displayed on one page.</li>
+                </ul>
+                <div class="col-md-8 project-feature">
+                    <h3>Joining a club and starting a club</h3>
+                    <ul class="list">
+                        <li>No outside links to the clubs websites, social accounts, and any other platforms.</li>
+                        <li>Short and sweet explanation about setting up a new club.</li>
+                        <li>Club criterias could be more in-depth (many loopholes).</li>
+                        <li>No search function for directory.</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/imgs/google-ex/video_intro_for_clubs.png" class="img-fluid google-work-images" data-action="zoom">
+                        <p class="caption">Clubs/councils introduced with a video</p>
+                        <img src="assets/imgs/google-ex/starting_a_club.png" class="img-fluid google-work-images" data-action="zoom">
+                        <p class="caption">Simple registration of a new club</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/imgs/google-ex/clubs_directory.png" class="img-fluid google-work-images" data-action="zoom">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container project-body">
+            <div class="row col-md-9">
+                <h5 class="google">The Problem</h5>
+                <h2>Finding The Problem</h2>
+                <p>As noticed in every club fair and recruitment cycle, students (mostly first-years) are always amped to join a club. 
+                    However, over the school year, participation and active counts start to die down, and rightfully so due to projects, quizzes, tests, and exams.
+                </p>
+                <p>
+                    Being a past executive for a club called UW eSports and a member of UX/Product Club, many common statements made by club members and executives were;
+                </p>
+            </div>
+            <div class="row col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2dot5 col-lg-7">
+                <q><sup>1.</sup>I don’t find clubs and councils online, I like to go to the club fair to find them</q>
+                <q><sup>2.</sup>Hard to promote an event. Everything clubs and councils do are by themselves, the club committees provide no help</q>
+                <q><sup>3.</sup>I hear about clubs from friends, especially the wacky ones</q>
+            </div>
+            <div class="row col-md-9">
+                <h3>Insights</h3>
+                <p>After testing and researching other school sites, as well as having first-hand experience with running a club, these were the insights that I needed to address;</p>
+            </div>
+            <div class="row logo-lg project-feature">
+                <div class="col-md-4">
+                    <img src="assets/imgs/google-ex/adding_peeps.svg" class="img-fluid">
+                    <h6>Seamless experience</h6>
+                    <p>The progress from joining, starting, and searching needs to be streamlined.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/imgs/google-ex/digital_world.svg" class="img-fluid">
+                    <h6>Connection</h6>
+                    <p>The club fair's experience need to connect with the students outside the fair.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/imgs/google-ex/star.svg" class="img-fluid">
+                    <h6>Lack of recognition</h6>
+                    <p>Clubs/councils need to be recognized more for their efforts.</p>
+                </div>
+            </div>
+            <div class="row col-md-9">
+                <h2>The Goal</h2>
+                <p>Relating to the research and narrowing of the problem, I decided to<span class="google-highlight"> better relations between club committees, clubs/councils, and the students</span></p>
+            </div>
+        </div>
+        <div class="container project-body">
+            <div class="row col-md-9">
+                <h5 class="google">The Design</h5>
+                <h2>Wireframing</h2>
+                <p>Taking the research gathered from the Heuristic Research and critical thinking from analyzing the problem at hand, I wanted to design 2 user flows surrounding both web and mobile.
+                    The reason why I wanted to design two user flows is because going to club fairs, and coming home from them both are critical points of interaction many students and club executives
+                    experience. Talking with club members is one thing, however, going home and acting on a club application or asking to join a club is another.
+                </p>
+            </div>
+            <div class="row col-md-9 project-feature">
+                <h3>Club fair day</h3>
+                <p>This was from last semesters club fair week. As you can see, there were alot of people interested in our club and other clubs in general. However, notice a problem? When asked how they could
+                    contact us, we had to point to our board showing them our contact info. Not only was it hard for them to see our info, but they were clogging up the space along the aisles for other clubs.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/imgs/google-ex/club_booth_busy.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/imgs/google-ex/club_booth_esports.jpg" class="img-fluid">
+                    <p class="caption">Contact info can hardly be seen</p>
+                </div>
+            </div>
+            <div class="row project-feature col-md-9">
+                <h3>Mobile solution</h3>
+                <p>Why not generate a QR code for clubs that house all their contact information? That way when interested students need the contact information on club fair day, they can instantly scan the code 
+                    to get all the info. Once the scan is successful, a quick dropdown section will allow the user to quickly see valuable information, and decide whether or not they want to add it their interests list.
+                </p>
+            </div>
+            <div class="row project-feature">
+                <img src="assets/imgs/google-ex/Mobile.png" class="img-fluid" data-action="zoom">
+                <p class="caption">User flow for QR Scan</p>
+            </div>
+            <div class="row project-feature">
+                <div class="col-md-6">
+                    <h3>First experience</h3>
+                    <p>
+                        For the website, I centered my user flow around one main objective <span class="google-highlight">efficiency</span>. At the start of the flow, users are greeted with the choice to either "Join A Club" or 
+                        "Start A Club". This establishes an immediate response to why many students go on the website, to find clubs they are interested in or jump start a club.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/imgs/google-ex/Web 1 - Homepage.png" class="img-fluid" data-action="zoom">
+                    <p class="caption">Green bar represents a continuation of the page</p>
+                </div>
+            </div>
+            <div class="row project-feature">
+                <div class="col-md-6 order-2 order-md-1">
+                    <img src="assets/imgs/google-ex/Web 2 - Join A Club.png" class="img-fluid" data-action="zoom">
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <h3>Club directory</h3>
+                    <p>
+                        The club directory presents an immediate statistic about the current count of clubs, giving the student an impression about the immense selection the school has off-the-bat. 
+                    </p>
+                    <p>
+                        Each club profile, has a dedicated profile picture, alongside an add button that allows interested students to add their clubs to their short-list. Lastly, each club presentation is
+                        in a randomized order, diminishing the bias that comes from alphabetical order.
+                    </p>
+                </div>
+            </div>
+            <div class="row project-feature">
+                <div class="col-md-6">
+                    <h3>Starting a club</h3>
+                    <p>
+                        The starting of a club is streamlined for many users who don't know where to start. The step by step guide is structured in a format that prepares club leaders for the ethical 
+                        criterias of starting a club, then streamlines them into the technical requirements of paperwork and form submissions.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/imgs/google-ex/Web 3 - Start A Club.png" class="img-fluid" data-action="zoom">
+                </div>
+            </div>
+            <div class="row project-feature">
+                <div class="col-md-6 order-2 order-md-1">
+                    <img src="assets/imgs/google-ex/Web 4 - Club Profile.png" class="img-fluid" data-action="zoom">
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <h3>Club profile</h3>
+                    <p>
+                        Having an account keeps all your clubs and councils organized in one place, without having you to organize meeting dates and event dates. It also manages club applications
+                        and gives other clubs the opportunity to review and reach out to potential candidates whom never have thought about the joining of the club.
+                    </p>
+                    <p> This system has many opportunities for the school community to connect. It also gives students experience in reviewing potential members whom never have thought they would
+                        enjoy a particular club. It also guarantees club executives that their club members see a particular announcement, without out having to sacrifice their post viewings to 
+                        other system algorithms.
+                    </p>
+                </div>
+            </div>
+        </div>
     
+    <div class="row button-center">
+        <button id="toggle-user" data-text-swap="Close" data-text-original="View full user flow" class="btn btn-primary" onclick="hideUser()">View full user flow</button>
+    </div>
+    
+    <div id="toggle-hide-user" style="display: none;">
+        <div class="row">
+            <span class="col-xs-12 col-sm-12 col-lg-12">
+                <img src="/thekeendesigns.github.io/assets/imgs/google-ex/Wireframe.png" class="img-fluid">
+            </span>
+        </div>
+    </div>
+
+    <div class="container project-body">
+        <div class="row col-md-9">
+            <h5 class="google">High Fidelity</h5>
+            <h2>Low-Level Prototype</h2>
+            <p>
+                For both the wireframes and high-fidelity designs, I followed a different variation of the Material Design system. I wanted my low-level design system to focus on strong typography, compared to a visual strong design system like 
+                <a href="https://atlassian.design/" target="_blank" class="underline color-link google-highlight">Atlassian's</a>.
+            </p>
+            <p>
+                The colour scheme was based off of my school's colour pattern. The yellow was used to emphasize the more important areas that students should focus their <span class="google-highlight">mouse/touch interactions</span> with.
+            </p>
+        </div>
+    </div>
+
+    <div class="container project-body">
+        <div class="row project-feature">
+            <div class="col-lg-4">
+                <h6 class="project-number-google">1.</h6>
+                <h3>The buttons</h3>
+                <p>The critical interaction point on the homepage, depended on the two buttons. I used yellow to emphasize that the club directory is what most people tend to click on. I used a rare green for starting a club, since most people understand there is a process for that particular button.</p>
+            </div>
+            <div class="col-lg-7 col-lg-offset-1">
+                <img src="assets/imgs/google-ex/Homepage (High).png" class="img-fluid" data-action="zoom">
+            </div>
+        </div>
+        <div class="row project-feature">
+            <div class="col-lg-4">
+                <h6 class="project-number-google">2.</h6>
+                <h3>Personalization and encouragement</h3>
+                <p>Each club has their autonomy to personalize their block on the club directory page. Also, the dropdown menu is categorized with the typical avenues of interests, but instead of only keeping it to that, I used parameters such as "Trending" and "New".</p>
+                <p>These two parameters work in two ways;</p>
+                <ul class="list">
+                    <li>Motivates clubs to try to get into those categories.</li>
+                    <li>Gives students a quicker access to view the bigger clubs.</li>
+                    <li>Using the word "Trending" does not belittle other clubs.</li>
+                </ul>
+            </div>
+            <div class="col-lg-7 col-lg-offset-1">
+                <img src="assets/imgs/google-ex/Join A Club.png" class="img-fluid" data-action="zoom">
+            </div>
+        </div>
+        <div class="row project-feature">
+            <div class="col-lg-4">
+                <h6 class="project-number-google">3.</h6>
+                <h3>Club tracking</h3>
+                <p>The club profile will mostly allow students to view their club applications and club events. For those who haven't started a club, there will be an option for starting a club that can be toggled on or off in the settings. The reason for this design is to encourage students to start clubs/councils.</p>
+            </div>
+            <div class="col-lg-7 col-lg-offset-1">
+                <img src="assets/imgs/google-ex/Club Profile.png" class="img-fluid" data-action="zoom">
+                <p class="caption">New framework I designed belonging to a set of 8.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr width=70%>
+    
+    <div class="container project-body">
+        <div class="row text-center">
+            <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Takeaways</h2>
+            <p class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2dot5 col-lg-7">
+                There is so much opportunities to expand the capabilities of the club profile page, such as integrating google calendars to sync dates, centralize all club administrative activities, and allow club executives to manage their clubs better.
+                I would continue to explore more ways to better the club profiles page, if given more time, and think of other ways to connect the physical experience of attending clubs/councils to the digital experience.
+            </p>
+            <p class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2dot5 col-lg-7">
+                I always love a good Design Exercise. While keeping an optimistic view, this exercise was very relatable. Clubs are a great way for students to escape the stressful
+                life of exams, tests, quizzes, and everything in between academia. They also give students an opportunity to spend time with friends and do activities they find interesting such as this Design Exercise.
+            </p>
+            <p class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2dot5 col-lg-7">
+                Thank You <span class="google-highlight">Googlers!</span> 
+            </p>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/nav-animation.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/zoom.js"></script>
+    <script src="js/hide.js"></script>
+
     </body>
-    
 </html>
