@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang=en>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132668069-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-132668069-1');
+        </script>
+
         <title>Kevin Keen</title>
         <meta charset="utf-8">
         <meta name="keywords" content="user interface, webdesign, app design, user experience, usability, development, wordpress, ui, ux">
@@ -10,6 +20,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <!--MY CSS-->
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link href="css/zoom.css" rel="stylesheet">
         <!--Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:700|Open+Sans:400,700" rel="stylesheet">
         <!--Animate CSS-->
@@ -109,7 +120,7 @@
             </div>
             <div class="row">
                 <span class="col-xs-12 col-sm-12 col-lg-offset-1 col-lg-10">
-                    <img src="assets/imgs/vivovii/processTimeline.png" class="img-fluid">
+                    <img src="assets/imgs/vivovii/processTimeline.png" class="img-fluid" data-action="zoom">
                 </span>
             </div>
         </div>
@@ -137,7 +148,7 @@
                     <p>The type effect transmits info on initial load, without any necessary actions. Allowing visitors to instantly understand the company, which the old version lacked.</p>
                 </div>
                 <div class="col-lg-7 col-lg-offset-1">
-                    <img src="assets/imgs/vivovii/landingPage.gif" class="img-fluid">
+                    <img src="assets/imgs/vivovii/landingPage.gif" class="img-fluid" data-action="zoom">
                 </div>
             </div>
             <div class="row project-feature">
@@ -147,7 +158,7 @@
                     <p>New navigation allowing the product/consultancy firm to instantly show their immense firm. This navigation focused on lead retention (current company strategy) through the contact us button.</p>
                 </div>
                 <div class="col-lg-7 col-lg-offset-1">
-                    <img src="assets/imgs/vivovii/menuInteraction.gif" class="img-fluid">
+                    <img src="assets/imgs/vivovii/menuInteraction.gif" class="img-fluid" data-action="zoom">
                 </div>
             </div>
             <div class="row project-feature">
@@ -157,8 +168,8 @@
                     <p>The new design allows for the understanding of each framework piece without having to guess why and what each word representation means. This was a confusing aspect in their old design, and many clients had to clarify with the firm about what each piece of the framework mean't.</p>
                 </div>
                 <div class="col-lg-7 col-lg-offset-1">
-                    <img src="assets/imgs/vivovii/framework_integration.png" class="img-fluid">
-                    <img src="assets/imgs/vivovii/framework-demo.gif" class="img-fluid">
+                    <img src="assets/imgs/vivovii/framework_integration.png" class="img-fluid" data-action="zoom">
+                    <img src="assets/imgs/vivovii/framework-demo.gif" class="img-fluid" data-action="zoom">
                     <p class="caption">New framework I designed belonging to a set of 8.</p>
                 </div>
             </div>
@@ -322,10 +333,11 @@
     </div>
     <!--     Footer      -->
 
-
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/nav-animation.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/zoom.js"></script>
     </body>
 </html>    
