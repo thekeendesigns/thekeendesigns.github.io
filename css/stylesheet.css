@@ -31,29 +31,6 @@ body {
   background: rgba(255, 128, 0, 0.534);
 }
 
-/* Strike */
-@keyframes strike{
-  0%     { transform-origin:  0% 50%;transform:scaleX(0); }
-  50%    { transform-origin:  0% 50%;transform:scaleX(1);  }
-  50.01% { transform-origin:100% 50%;transform:scaleX(1);  }
-  100%   { transform-origin:100% 50%;transform:scaleX(0);  }
-}
-.strike {
-  position: relative;
-  -webkit-animation:all 0.8s ease;
-}
-.strike:hover:after {
-  content: ' ';
-  position: absolute;
-  top: 53%;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: rgb(68, 68, 68);
-  animation: strike .40s ease-in-out forwards;
-}
-/* Strike */
-
 /* Override Bootstrap a */
 a.color-link {
   color:rgb(50, 50, 50);
@@ -274,6 +251,10 @@ sup {
   -o-transition: all .6s ease;
   transition: all .6s ease;
   position: relative;
+}
+.project-text-link {
+  display:inline-block;
+  overflow:visible;
 }
 .project-text-link .project-blurb h2,.project-content-text{
   color:#323232;
