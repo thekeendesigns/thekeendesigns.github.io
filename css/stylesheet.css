@@ -187,6 +187,7 @@ sup {
   padding-right: 2rem;
   padding-left: 2rem;
   padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 .Home {
   padding-top: 6rem;
@@ -269,6 +270,12 @@ sup {
 .project-content-text {
   color: #323232;
 }
+.light-orange .fa-long-arrow-right {
+  color: #ed7924;
+}
+.light-orange h5 {
+  color: #ed7924;
+}
 .green .fa-long-arrow-right {
   color: #34a853;
 }
@@ -286,6 +293,9 @@ sup {
 }
 .purple h5 {
   color: #591d95;
+}
+.project-blurb.light-orange:hover {
+  background-color: #ed7924;
 }
 .project-blurb.green:hover {
   background-color: #34a853;
@@ -434,7 +444,7 @@ hr {
 }
 /* Button */
 
-/* vivovii */
+/* Work */
 #work-header {
   background-color: #ff63386e;
 }
@@ -452,6 +462,21 @@ hr {
 }
 .sub-title p {
   font-size: 1.1rem;
+}
+#layup-header {
+  background-color: #eba26f;
+}
+#layup-header .work-title {
+  padding-top: 10rem;
+  text-align: center;
+  color: #323232;
+}
+#layup-header .sub-title {
+  text-align: center;
+  font-weight: 600;
+  color: #323232;
+  margin-top: 0.8rem;
+  margin-bottom: 3rem;
 }
 #google-header {
   background-color: rgba(52, 168, 83, 0.431);
@@ -479,7 +504,7 @@ hr {
   font-weight: 700;
 }
 .logo-lg img {
-  width: 30%;
+  width: 25%;
 }
 .logo-lg h6,
 .logo-lg p {
@@ -755,6 +780,7 @@ figure {
   text-align: right;
 }
 .vivovii-back {
+  transition: 0.7s;
   -webkit-transition: all 0.7s ease;
 }
 .vivovii-back:hover {
@@ -762,6 +788,7 @@ figure {
   background-color: #fdcfa0;
 }
 .mackenzie-back {
+  transition: 0.7s;
   -webkit-transition: all 0.7s ease;
 }
 .mackenzie-back:hover {
