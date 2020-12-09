@@ -463,6 +463,21 @@ hr {
 .sub-title p {
   font-size: 1.1rem;
 }
+#mack-header {
+  background-color: #591d9586;
+}
+#mack-header .work-title {
+  padding-top: 10rem;
+  text-align: center;
+  color: #323232;
+}
+#mack-header .sub-title {
+  text-align: center;
+  font-weight: 600;
+  color: #323232;
+  margin-top: 0.8rem;
+  margin-bottom: 3rem;
+}
 #layup-header {
   background-color: #eba26f;
 }
@@ -519,6 +534,14 @@ hr {
   max-width: 100%;
   height: auto;
 }
+.row .mack-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -5rem;
+  max-width: 40%;
+  height: auto;
+}
 #sum {
   display: block;
   padding-left: 2rem;
@@ -546,6 +569,22 @@ hr {
   margin-bottom: 0.5em;
   text-transform: uppercase;
   color: #ff6338;
+}
+.project-body .sub-title-mack {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  color: #591d95;
+}
+.project-body .sub-title-layup {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  color: #ed7924;
 }
 .project-body h2 {
   font-size: 2.5em;
@@ -670,6 +709,14 @@ span img {
   margin: 0.5em 0;
   line-height: 1.4em;
 }
+.spacer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.persona-pic {
+  width:30%;
+  height:auto 0;
+}
 /* Google Password Page Style */
 .pass-center {
   margin: auto;
@@ -742,6 +789,7 @@ figure {
   font-style: italic;
 }
 
+
 /* Universal Footer */
 .social-links {
   display: inline;
@@ -794,6 +842,14 @@ figure {
 .mackenzie-back:hover {
   transition: 0.9s;
   background-color: rgb(217, 188, 246);
+}
+.google-next {
+  transition: 0.7s;
+  -webkit-transition: all 0.7s ease;
+}
+.google-next:hover {
+  transition: 0.9s;
+  background-color: #54e27a9c;
 }
 .section-title {
   font-size: 20px;
@@ -887,5 +943,8 @@ figure {
     display: block;
     margin: 7px 8px;
     font-size: 0.9em;
+  }
+  h1 {
+    font-size: 3.5em;
   }
 }
