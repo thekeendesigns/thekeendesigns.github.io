@@ -372,6 +372,78 @@ a:hover .side-projects-link:before {
   opacity: 0.7;
   transition: 300ms;
 }
+.button-back-vivovii {
+  background-color:#ff63385d;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  font-size: 12px;
+  padding: 10px;
+  color:  rgb(29, 29, 29);
+  display: inline-block;
+}
+.project-blurb.orange:hover .button-back-vivovii {
+  background-color:#ffffff34;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.button-back-mack {
+  background-color:#591d9556;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  font-size: 12px;
+  padding: 10px;
+  color:  rgb(29, 29, 29);
+  display: inline-block;
+}
+.project-blurb.purple:hover .button-back-mack {
+  background-color:#ffffff34;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.button-back-layup {
+  background-color:#ed78243d;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  font-size: 12px;
+  padding: 10px;
+  color:  rgb(29, 29, 29);
+  display: inline-block;
+}
+.project-blurb.light-orange:hover .button-back-layup {
+  background-color:#ffffff34;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.button-back-google {
+  background-color:#34a8534f;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  font-size: 12px;
+  padding: 10px;
+  color:  rgb(29, 29, 29);
+  display: inline-block;
+}
+.project-blurb.green:hover .button-back-google {
+  background-color:#ffffff34;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 hr {
   margin-bottom: 3rem;
   margin-top: 3rem;
@@ -946,5 +1018,8 @@ figure {
   }
   h1 {
     font-size: 3.5em;
+  }
+  .purple h2 { /* For Mackenzie Title on Home Page */
+    font-size: 2.3em;
   }
 }
