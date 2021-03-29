@@ -31,7 +31,7 @@ body {
   background: rgba(255, 128, 0, 0.534);
 }
 
-/* Override Bootstrap a */
+/* Override default a */
 a.color-link {
   color: rgb(50, 50, 50);
   text-decoration: none;
@@ -44,9 +44,8 @@ a.link-vivovii:hover {
   color: #ff6338;
   text-decoration: none;
 }
-
 a.link-layup:hover {
-  color: #ed7924;
+  color: #F26161;
   text-decoration: none;
 }
 /* Override Bootstrap a */
@@ -105,7 +104,7 @@ a .site-title {
 }
 
 .link-layup {
-  color: #ed7924;
+  color: #F26161;
 }
 
 /* Work Arrow */
@@ -147,6 +146,8 @@ h5 {
 }
 h4 {
   font-size: 1.5rem;
+  color: #323232;
+  letter-spacing: -1px;
 }
 h3 {
   font-size: 2rem;
@@ -162,6 +163,7 @@ h2 {
 h1 {
   font-size: 5rem;
   font-weight: 600;
+  letter-spacing:-2px;
 }
 li {
   font-size: 18px;
@@ -273,10 +275,10 @@ sup {
   color: #323232;
 }
 .light-orange .fa-long-arrow-right {
-  color: #ed7924;
+  color: #F16F6F;
 }
 .light-orange h5 {
-  color: #ed7924;
+  color: #F16F6F;
 }
 .green .fa-long-arrow-right {
   color: #34a853;
@@ -297,7 +299,7 @@ sup {
   color: #591d95;
 }
 .project-blurb.light-orange:hover {
-  background-color: #ed7924;
+  background-color: #F16F6F;
 }
 .project-blurb.green:hover {
   background-color: #34a853;
@@ -411,7 +413,7 @@ a:hover .side-projects-link:before {
   transition: all 0.3s ease;
 }
 .button-back-layup {
-  background-color:#ed78243d;
+  background-color:#f8a6a6;
   border: none;
   border-radius: 20px;
   margin-bottom: 1rem;
@@ -445,6 +447,28 @@ a:hover .side-projects-link:before {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.download-bt-center{
+  margin: 2rem auto;
+  display: flex;  
+  justify-content: center;   
+}
+.download-button {
+  background-color: white; 
+  color: #F26161; 
+  border: 2px solid #f2616162;
+  padding: 16px 32px;
+  margin: auto 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.download-button:hover {
+  text-decoration: none;
+  color: #F26161;
+  border: 2px solid #f26161ea;
 }
 hr {
   margin-bottom: 3rem;
@@ -553,7 +577,7 @@ hr {
   margin-bottom: 3rem;
 }
 #layup-header {
-  background-color: #eba26f;
+  background-color: #F26161;
 }
 #layup-header .work-title {
   padding-top: 10rem;
@@ -658,11 +682,12 @@ hr {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
-  color: #ed7924;
+  color: #F16F6F;
 }
 .project-body h2 {
   font-size: 2.5em;
   margin-bottom: 1em;
+  letter-spacing: -1px;
 }
 #intro-back {
   background-color: #f4f4f4;
@@ -853,6 +878,7 @@ div .about-links a {
 }
 .work-title {
   font-weight: 500;
+  letter-spacing: -1px;
 }
 .gray-timeline {
   font-weight: 400;
@@ -908,6 +934,14 @@ figure {
 .vivovii-back:hover {
   transition: 0.9s;
   background-color: #fdcfa0;
+}
+.layup-back {
+  transition: 0.7s;
+  -webkit-transition: all 0.7s ease;
+}
+.layup-back:hover {
+  transition: 0.9s;
+  background-color: #f39d9d;
 }
 .mackenzie-back {
   transition: 0.7s;
@@ -968,10 +1002,12 @@ figure {
   .col-lg-offset-6 {
     margin-left: 50%;
   }
+  /*
   .col-lg-6 {
     flex-basis: 43%;
     max-width: 43%;
   }
+  */
   .col-lg-offset-2dot5 {
     margin-left: 20.83333333%;
   }
