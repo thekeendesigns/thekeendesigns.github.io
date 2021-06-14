@@ -48,6 +48,10 @@ a.link-layup:hover {
   color: #F26161;
   text-decoration: none;
 }
+a.link-perspect:hover {
+  color: #08708A;
+  text-decoration: none;
+}
 /* Override Bootstrap a */
 
 /*     Navbar      */
@@ -102,9 +106,11 @@ a .site-title {
 .link-vivovii {
   color: #ff6338;
 }
-
 .link-layup {
   color: #F26161;
+}
+.link-perspect {
+  color: #08708A;
 }
 
 /* Work Arrow */
