@@ -49,7 +49,7 @@ a.link-layup:hover {
   text-decoration: none;
 }
 a.link-perspect:hover {
-  color: #08708A;
+  color: #56B1BF;
   text-decoration: none;
 }
 /* Override Bootstrap a */
@@ -309,6 +309,12 @@ sup {
 .purple h5 {
   color: #591d95;
 }
+.teal .fa-long-arrow-right {
+  color:#56B1BF;
+}
+.teal h5 {
+  color:#56B1BF;
+}
 .project-blurb.light-orange:hover {
   background-color: #F16F6F;
 }
@@ -320,6 +326,9 @@ sup {
 }
 .project-blurb.purple:hover {
   background-color: #591d95;
+}
+.project-blurb.teal:hover {
+  background-color: #56B1BF;
 }
 .project-blurb:hover .fa-long-arrow-right {
   color: #fafafa;
@@ -389,6 +398,17 @@ a:hover .side-projects-link:before {
 }
 .button-back-vivovii {
   background-color:#ff63385d;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  font-size: 12px;
+  padding: 10px;
+  color:  rgb(29, 29, 29);
+  display: inline-block;
+}
+.button-back-perspect {
+  background-color:#94e9f77a;
   border: none;
   border-radius: 20px;
   margin-bottom: 1rem;
@@ -602,6 +622,21 @@ hr {
   margin-top: 0.8rem;
   margin-bottom: 3rem;
 }
+#perspect-header {
+  background-color: #9ceaf7;
+}
+#perspect-header .work-title {
+  padding-top: 10rem;
+  text-align: center;
+  color: #323232;
+}
+#perspect-header .sub-title {
+  text-align: center;
+  font-weight: 600;
+  color: #323232;
+  margin-top: 0.8rem;
+  margin-bottom: 3rem;
+}
 #google-header {
   background-color: rgba(52, 168, 83, 0.431);
 }
@@ -694,6 +729,14 @@ hr {
   margin-bottom: 0.5em;
   text-transform: uppercase;
   color: #F16F6F;
+}
+.project-body .sub-title-perspect {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  color: #56B1BF;
 }
 .project-body h2 {
   font-size: 2.5em;
@@ -945,6 +988,14 @@ figure {
 .vivovii-back:hover {
   transition: 0.9s;
   background-color: #fdcfa0;
+}
+.perspect-back {
+  transition: 0.7s;
+  -webkit-transition: all 0.7s ease;
+}
+.perspect-back:hover {
+  transition: 0.9s;
+  background-color: #9CEAF7;
 }
 .layup-back {
   transition: 0.7s;
