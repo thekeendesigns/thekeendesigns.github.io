@@ -421,6 +421,13 @@ a:hover .side-projects-link:before {
   color:  rgb(29, 29, 29);
   display: inline-block;
 }
+.project-blurb.teal:hover .button-back-perspect {
+  background-color:#ffffff34;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .project-blurb.orange:hover .button-back-vivovii {
   background-color:#ffffff34;
   color: white;
