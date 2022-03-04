@@ -873,6 +873,13 @@ span img {
   width:30%;
   height:auto 0;
 }
+.perspect-border {
+  border-style:solid;
+  padding: 2rem;
+  border-color:#56B1BF;
+  background-color: white;
+  box-shadow: 0 3px 8px 3px rgb(0 0 0 / 15%);
+}
 /* Google Password Page Style */
 .pass-center {
   margin: auto;
