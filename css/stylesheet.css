@@ -52,6 +52,10 @@ a.link-perspect:hover {
   color: #56B1BF;
   text-decoration: none;
 }
+a.link-questrade:hover {
+  color: #328636;
+  text-decoration: none;
+}
 /* Override Bootstrap a */
 
 /*     Navbar      */
@@ -111,6 +115,9 @@ a .site-title {
 }
 .link-perspect {
   color: #08708A;
+}
+.link-questrade {
+  color:#328636;
 }
 
 /* Work Arrow */
@@ -549,6 +556,14 @@ hr {
 }
 .hover-effect:hover {
   color: transparent !important;
+}
+#image {
+  position: absolute;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  pointer-events: none;
 }
 /* Hover Effect 1 */
 
