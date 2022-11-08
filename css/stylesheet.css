@@ -105,6 +105,11 @@ a .site-title {
   margin: 8px 20px;
   font-weight: 600;
 }
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*     Navbar      */
 
 .link-vivovii {
@@ -138,6 +143,7 @@ a .site-title {
     transform: translate(10px, 0);
   }
 }
+
 .trello-progress {
   line-height: 35px;
   color: rgb(50, 50, 50);
@@ -325,6 +331,12 @@ b {
 .teal h5 {
   color:#56B1BF;
 }
+.dark-green .fa-long-arrow-right {
+  color:#328636;
+}
+.dark-green h5 {
+  color:#328636;
+}
 .project-blurb.light-orange:hover {
   background-color: #F16F6F;
 }
@@ -339,6 +351,9 @@ b {
 }
 .project-blurb.teal:hover {
   background-color: #56B1BF;
+}
+.project-blurb.dark-green:hover {
+  background-color: #328636;
 }
 .project-blurb:hover .fa-long-arrow-right {
   color: #fafafa;
@@ -414,6 +429,17 @@ a:hover .side-projects-link:before {
   margin-left: 0.5rem;
   font-size: 12px;
   padding: 10px;
+  color: rgb(29, 29, 29);
+  display: inline-block;
+}
+.button-back-questrade {
+  background-color:#b4ffb8;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  font-size: 12px;
+  padding: 10px;
   color:  rgb(29, 29, 29);
   display: inline-block;
 }
@@ -427,6 +453,13 @@ a:hover .side-projects-link:before {
   padding: 10px;
   color:  rgb(29, 29, 29);
   display: inline-block;
+}
+.project-blurb.dark-green:hover .button-back-questrade {
+  background-color:#ffffff34;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .project-blurb.teal:hover .button-back-perspect {
   background-color:#ffffff34;
@@ -662,6 +695,22 @@ hr {
   margin-top: 0.8rem;
   margin-bottom: 3rem;
 }
+
+#questrade-header {
+  background-color: #80bd84;
+}
+#questrade-header .work-title {
+  padding-top: 10rem;
+  text-align: center;
+  color: #323232;
+}
+#questrade-header .sub-title {
+  text-align: center;
+  font-weight: 600;
+  color: #323232;
+  margin-top: 0.8rem;
+  margin-bottom: 3rem;
+}
 #google-header {
   background-color: rgba(52, 168, 83, 0.431);
 }
@@ -762,6 +811,14 @@ hr {
   margin-bottom: 0.5em;
   text-transform: uppercase;
   color: #56B1BF;
+}
+.project-body .sub-title-questrade {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  color: #328636;
 }
 .project-body h2 {
   font-size: 2.5em;
@@ -902,6 +959,13 @@ span img {
   background-color: white;
   box-shadow: 0 3px 8px 3px rgb(0 0 0 / 15%);
 }
+.questrade-border {
+  border-style:solid;
+  padding: 0rem 2rem;
+  border-color:#328636;
+  background-color: white;
+  box-shadow: 0 3px 8px 3px rgb(0 0 0 / 15%);
+}
 /* Google Password Page Style */
 .pass-center {
   margin: auto;
@@ -1028,6 +1092,14 @@ figure {
 .perspect-back:hover {
   transition: 0.9s;
   background-color: #9CEAF7;
+}
+.questrade-back {
+  transition: 0.7s;
+  -webkit-transition: all 0.7s ease;
+}
+.questrade-back:hover {
+  transition: 0.9s;
+  background-color: #bcffbf;
 }
 .layup-back {
   transition: 0.7s;
