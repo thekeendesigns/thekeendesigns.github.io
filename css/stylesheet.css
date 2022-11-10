@@ -110,6 +110,11 @@ a .site-title {
   justify-content: center;
   align-items: center;
 }
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 /*     Navbar      */
 
 .link-vivovii {
@@ -205,6 +210,12 @@ sup {
 b {
   font-weight: 600;
 }
+hr {
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:gray
+}
 /* Text */
 
 #confine {
@@ -219,15 +230,13 @@ b {
   padding-bottom: 3.5rem;
 }
 .Home {
-  padding-top: 6rem;
+  margin-top: 8rem;
 }
 .container .hello {
-  position: inline-block;
-  height: 70%;
+  height: 100%;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 999%;
-  margin-top: -27px;
 }
 #head-nav .container h3 {
   color: #323232;
@@ -245,19 +254,8 @@ b {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
-.balloons {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: url(../assets/imgs/main-page/balloon_design.svg);
-  background-size: cover;
-  z-index: -1;
-  opacity: 0.4;
-}
 .Project {
-  margin-top: 10rem;
+  margin-top: 8rem;
   margin-bottom: 10rem;
 }
 .work-thumbnail {
@@ -1194,6 +1192,9 @@ figure {
   h4 {
     font-size: 1.3rem;
   }
+  .hello-mob {
+    margin-top: 3rem;
+  }
   .col-md-offset-1 {
     margin-left: 8.33333333%;
   }
@@ -1222,6 +1223,12 @@ figure {
   }
   h1 {
     font-size: 3.5em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  .hello-mob {
+    margin-top: 3rem;
   }
   .purple h2 { /* For Mackenzie Title on Home Page */
     font-size: 2.3em;
