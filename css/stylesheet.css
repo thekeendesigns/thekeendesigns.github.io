@@ -56,6 +56,10 @@ a.link-questrade:hover {
   color: #328636;
   text-decoration: none;
 }
+a.link-valeyo:hover {
+  color: #019583;
+  text-decoration: none;
+}
 /* Override Bootstrap a */
 
 /*     Navbar      */
@@ -128,6 +132,9 @@ a .site-title {
 }
 .link-questrade {
   color:#328636;
+}
+.link-valeyo {
+  color:#019583;
 }
 
 /* Work Arrow */
