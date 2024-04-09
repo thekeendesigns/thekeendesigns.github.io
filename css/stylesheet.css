@@ -60,6 +60,14 @@ a.link-valeyo:hover {
   color: #019583;
   text-decoration: none;
 }
+a.link-perseus:hover {
+  color: #081338;
+  text-decoration: none;
+}
+a.link-securian:hover {
+  color: #099541;
+  text-decoration: none;
+}
 /* Override Bootstrap a */
 
 /*     Navbar      */
@@ -135,6 +143,12 @@ a .site-title {
 }
 .link-valeyo {
   color:#019583;
+}
+.link-perseus {
+  color:#081338;
+}
+.link-securian {
+  color:#099541;
 }
 
 /* Work Arrow */
