@@ -40,10 +40,6 @@ a.orange-text {
   color: #ff7f00;
   text-decoration: none;
 }
-a.link-vivovii:hover {
-  color: #ff6338;
-  text-decoration: none;
-}
 a.link-layup:hover {
   color: #F26161;
   text-decoration: none;
@@ -128,10 +124,6 @@ a .site-title {
 }
 
 /*     Navbar      */
-
-.link-vivovii {
-  color: #ff6338;
-}
 .link-layup {
   color: #F26161;
 }
@@ -338,12 +330,6 @@ hr {
 .orange h5 {
   color: #ff6338;
 }
-.purple .fa-long-arrow-right {
-  color: #591d95;
-}
-.purple h5 {
-  color: #591d95;
-}
 .teal .fa-long-arrow-right {
   color:#56B1BF;
 }
@@ -364,9 +350,6 @@ hr {
 }
 .project-blurb.orange:hover {
   background-color: #ff6338;
-}
-.project-blurb.purple:hover {
-  background-color: #591d95;
 }
 .project-blurb.teal:hover {
   background-color: #56B1BF;
@@ -440,17 +423,6 @@ a:hover .side-projects-link:before {
   opacity: 0.7;
   transition: 300ms;
 }
-.button-back-vivovii {
-  background-color:#ff63385d;
-  border: none;
-  border-radius: 20px;
-  margin-bottom: 1rem;
-  margin-left: 0.5rem;
-  font-size: 12px;
-  padding: 10px;
-  color: rgb(29, 29, 29);
-  display: inline-block;
-}
 .button-back-questrade {
   background-color:#b4ffb8;
   border: none;
@@ -481,31 +453,6 @@ a:hover .side-projects-link:before {
   transition: all 0.3s ease;
 }
 .project-blurb.teal:hover .button-back-perspect {
-  background-color:#ffffff34;
-  color: white;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.project-blurb.orange:hover .button-back-vivovii {
-  background-color:#ffffff34;
-  color: white;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.button-back-mack {
-  background-color:#591d9556;
-  border: none;
-  border-radius: 20px;
-  margin-bottom: 1rem;
-  margin-left: 0.5rem;
-  font-size: 12px;
-  padding: 10px;
-  color:  rgb(29, 29, 29);
-  display: inline-block;
-}
-.project-blurb.purple:hover .button-back-mack {
   background-color:#ffffff34;
   color: white;
   -webkit-transition: all 0.3s ease;
@@ -669,21 +616,6 @@ hr {
 .sub-title p {
   font-size: 1.1rem;
 }
-#mack-header {
-  background-color: #591d9586;
-}
-#mack-header .work-title {
-  padding-top: 10rem;
-  text-align: center;
-  color: #323232;
-}
-#mack-header .sub-title {
-  text-align: center;
-  font-weight: 600;
-  color: #323232;
-  margin-top: 0.8rem;
-  margin-bottom: 3rem;
-}
 #layup-header {
   background-color: #f2616191;
 }
@@ -714,7 +646,6 @@ hr {
   margin-top: 0.8rem;
   margin-bottom: 3rem;
 }
-
 #questrade-header {
   background-color: #80bd84;
 }
@@ -730,31 +661,6 @@ hr {
   margin-top: 0.8rem;
   margin-bottom: 3rem;
 }
-#google-header {
-  background-color: rgba(52, 168, 83, 0.431);
-}
-#google-header .work-title {
-  padding-top: 10rem;
-  text-align: center;
-  color: #323232;
-}
-#google-header .sub-title {
-  text-align: center;
-  font-weight: 600;
-  color: #323232;
-  margin-top: 0.8rem;
-  margin-bottom: 3rem;
-}
-.google-space {
-  margin-bottom: 8rem;
-}
-.project-body .google {
-  color: #34a853;
-}
-.google-highlight {
-  color: #34a853;
-  font-weight: 700;
-}
 .logo-lg img {
   width: 25%;
 }
@@ -769,14 +675,6 @@ hr {
   margin-right: auto;
   margin-bottom: -5rem;
   max-width: 100%;
-  height: auto;
-}
-.row .mack-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -5rem;
-  max-width: 40%;
   height: auto;
 }
 #sum {
@@ -806,14 +704,6 @@ hr {
   margin-bottom: 0.5em;
   text-transform: uppercase;
   color: #ff6338;
-}
-.project-body .sub-title-mack {
-  font-weight: 700;
-  font-size: 1.3rem;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-  color: #591d95;
 }
 .project-body .sub-title-layup {
   font-weight: 700;
@@ -938,15 +828,8 @@ span img {
   border-bottom: 2px solid #ff7f00;
   opacity: 0.6;
 }
-.row .vivoviipro {
-  padding: 0.5rem 3rem;
-}
 .row .pull-right span {
   color: #ff6338;
-}
-.vivovii-pro {
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 .remover .row {
   flex-wrap: nowrap;
@@ -1128,14 +1011,6 @@ figure {
   transition: 0.9s;
   background-color: #f39d9d;
 }
-.mackenzie-back {
-  transition: 0.7s;
-  -webkit-transition: all 0.7s ease;
-}
-.mackenzie-back:hover {
-  transition: 0.9s;
-  background-color: rgb(217, 188, 246);
-}
 .google-next {
   transition: 0.7s;
   -webkit-transition: all 0.7s ease;
@@ -1250,8 +1125,5 @@ figure {
   }
   .hello-mob {
     margin-top: 48px;
-  }
-  .purple h2 { /* For Mackenzie Title on Home Page */
-    font-size: 2.3em;
   }
 }
