@@ -1076,14 +1076,14 @@ figure {
 }
 
 /* Tablet */
-@media only screen and (min-width: 426px) and (max-width: 992px) {
+@media only screen and (min-width: 431px) and (max-width: 992px) {
   .col-md-offset-4 {
     margin-left: 33.33333333%;
   }
   .col-md-8 {
     -ms-flex-preferred-size: 66.66666667%;
-    flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
+    flex-basis: 100%;
+    max-width: 100%;
   }
   h4 {
     font-size: 1.3rem;
@@ -1110,7 +1110,7 @@ figure {
 }
 
 /* Phone */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   .Home .name {
     font-size: 3.5em;
   }
