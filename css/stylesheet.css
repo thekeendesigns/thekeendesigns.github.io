@@ -30,7 +30,21 @@ body {
   color: #fcfcfc;
   background: rgba(255, 128, 0, 0.534);
 }
-
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
 /* Override default a */
 a.color-link {
   color: rgb(50, 50, 50);
@@ -64,7 +78,6 @@ a.link-securian:hover {
   color: #099541;
   text-decoration: none;
 }
-/* Override Bootstrap a */
 
 /*     Navbar      */
 .global-nav {
@@ -160,12 +173,6 @@ a .site-title {
   50% {
     transform: translate(10px, 0);
   }
-}
-
-.trello-progress {
-  line-height: 35px;
-  color: rgb(50, 50, 50);
-  font-size: 20px;
 }
 
 /* Text */
@@ -267,10 +274,6 @@ hr {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
-.Project {
-  margin-top: 8rem;
-  margin-bottom: 10rem;
-}
 .work-thumbnail {
   position: relative;
   display: block;
@@ -282,6 +285,33 @@ hr {
   -webkit-box-shadow: 0px 0px 31px -9px rgba(0, 0, 0, 0.74);
   -moz-box-shadow: 0px 0px 31px -9px rgba(0, 0, 0, 0.74);
   box-shadow: 0px 0px 31px -9px rgba(0, 0, 0, 0.74);
+}
+.top-text-container {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  left: 3%;
+  top: 4%;
+  right: 60%;
+  text-align: left;
+  font-size: 16px;
+}
+.bottom-text-container {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  left: 3%;
+  right: 60%;
+  bottom: 12%;
+  text-align: left;
+  font-size: 16px;
+}
+.thumbnail-subtitle {
+  color:#8f8f8f;
+  font-weight: 600;
+}
+.project-row {
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 32px;
 }
 .google-work-images {
   position: relative;
@@ -423,26 +453,14 @@ a:hover .side-projects-link:before {
   opacity: 0.7;
   transition: 300ms;
 }
-.button-back-questrade {
-  background-color:#b4ffb8;
+.tag {
+  background-color:#363636;
   border: none;
-  border-radius: 20px;
-  margin-bottom: 1rem;
-  margin-left: 0.5rem;
+  border-radius: 8px;
   font-size: 12px;
+  font-weight: 600;
   padding: 10px;
-  color:  rgb(29, 29, 29);
-  display: inline-block;
-}
-.button-back-perspect {
-  background-color:#94e9f77a;
-  border: none;
-  border-radius: 20px;
-  margin-bottom: 1rem;
-  margin-left: 0.5rem;
-  font-size: 12px;
-  padding: 10px;
-  color:  rgb(29, 29, 29);
+  color:#9C9C9C;
   display: inline-block;
 }
 .project-blurb.dark-green:hover .button-back-questrade {
@@ -459,34 +477,12 @@ a:hover .side-projects-link:before {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.button-back-layup {
-  background-color:#f8a6a6;
-  border: none;
-  border-radius: 20px;
-  margin-bottom: 1rem;
-  margin-left: 0.5rem;
-  font-size: 12px;
-  padding: 10px;
-  color:  rgb(29, 29, 29);
-  display: inline-block;
-}
 .project-blurb.light-orange:hover .button-back-layup {
   background-color:#ffffff34;
   color: white;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-.button-back-google {
-  background-color:#34a8534f;
-  border: none;
-  border-radius: 20px;
-  margin-bottom: 1rem;
-  margin-left: 0.5rem;
-  font-size: 12px;
-  padding: 10px;
-  color:  rgb(29, 29, 29);
-  display: inline-block;
 }
 .project-blurb.green:hover .button-back-google {
   background-color:#ffffff34;
@@ -1045,6 +1041,7 @@ figure {
 }
 /* Scroll Effect */
 
+/*Desktops/Laptops*/
 @media only screen and (min-width: 1200px) {
   .container {
     padding-right: 0.5rem;
@@ -1053,7 +1050,6 @@ figure {
     max-width: 100%;
   }
 }
-
 @media only screen and (min-width: 992px) {
   /* Pushes picture left a bit */
   .col-lg-offset-1 {
@@ -1074,9 +1070,13 @@ figure {
   .col-lg-offset-1dot5 {
     margin-left: 8.5%;
   }
+  .mobile-view {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+/* Tablet */
+@media only screen and (min-width: 426px) and (max-width: 992px) {
   .col-md-offset-4 {
     margin-left: 33.33333333%;
   }
@@ -1094,8 +1094,22 @@ figure {
   .col-md-offset-1 {
     margin-left: 8.33333333%;
   }
+  .tag {
+    display: none;
+  }
+  .top-text-container h3 {
+    font-size: 24px;
+  }
+  .top-text-container p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .mobile-view {
+    display: none;
+  }
 }
 
+/* Phone */
 @media screen and (max-width: 425px) {
   .Home .name {
     font-size: 3.5em;
@@ -1125,5 +1139,23 @@ figure {
   }
   .hello-mob {
     margin-top: 48px;
+  }
+  .desktop-view {
+    display: none;
+  }
+  .bottom-text-container {
+    display:none;
+  }
+  .mobile-view h3 {
+    font-size: 24px;
+  }
+  .mobile-view p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .top-text-container {
+    left: 4%;
+    top: 2%;
+    right: 4%;
   }
 }
