@@ -291,7 +291,7 @@ hr {
   color: rgb(255, 255, 255);
   left: 3%;
   top: 4%;
-  right: 60%;
+  right: 55%;
   text-align: left;
   font-size: 16px;
 }
@@ -460,8 +460,18 @@ a:hover .side-projects-link:before {
   font-size: 12px;
   font-weight: 600;
   padding: 10px;
-  color:#9C9C9C;
+  color:#d6d6d6;
   display: inline-block;
+}
+.tag-status {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 4px;
+  background: #099541;
 }
 .project-blurb.dark-green:hover .button-back-questrade {
   background-color:#ffffff34;
@@ -1114,9 +1124,6 @@ figure {
   .Home .name {
     font-size: 3.5em;
   }
-  .work-thumbnail {
-    margin-bottom: 280px;
-  }
   .global-nav > .container {
     padding: 15px;
   }
@@ -1142,9 +1149,6 @@ figure {
   }
   .desktop-view {
     display: none;
-  }
-  .bottom-text-container {
-    display:none;
   }
   .mobile-view h3 {
     font-size: 24px;
