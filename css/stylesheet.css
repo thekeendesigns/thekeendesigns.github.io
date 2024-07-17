@@ -304,7 +304,7 @@ hr {
   position: absolute;
   color: rgb(255, 255, 255);
   left: 3%;
-  top: 4%;
+  top: 6%;
   right: 55%;
   text-align: left;
   font-size: 16px;
@@ -321,6 +321,12 @@ hr {
 .thumbnail-subtitle {
   color:#8f8f8f;
   font-weight: 600;
+  font-size: 16px;
+}
+.thumbnail-title {
+  color:#ffffff;
+  font-weight: 600;
+  font-size: 24px;
 }
 .project-row {
   margin-left: 0%;
@@ -1097,11 +1103,11 @@ figure {
     display: none;
   }
   .top-text-container h3 {
-    font-size: 24px;
+    font-size: 16px;
   }
-  .top-text-container p {
-    font-size: 14px;
-    line-height: 1.6;
+  .top-text-container .thumbnail-title {
+    font-size: 20px;
+    line-height: 1.4;
   }
   .mobile-view {
     display: none;
@@ -1140,10 +1146,10 @@ figure {
     display: none;
   }
   .mobile-view h3 {
-    font-size: 24px;
-  }
-  .mobile-view p {
     font-size: 16px;
+  }
+  .mobile-view .thumbnail-title {
+    font-size: 20px;
     line-height: 1.4;
   }
   .top-text-container {
