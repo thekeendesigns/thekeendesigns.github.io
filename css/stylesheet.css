@@ -541,7 +541,7 @@ mark {
   transition: all 0.3s ease;
 }
 .download-bt{
-  margin: 2rem auto;
+  margin: 2rem 0rem;
   display: flex;  
 }
 .download-button {
@@ -549,7 +549,6 @@ mark {
   color: #F26161; 
   border: 2px solid #f2616162;
   padding: 16px 32px;
-  margin: auto 1rem;
   text-decoration: none;
   font-weight: 600;
   -webkit-transition: all 0.3s ease;
