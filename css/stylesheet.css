@@ -112,7 +112,7 @@ a.link-perseus:hover {
   align-items: center;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  padding: 20px 15px 20px 15px;;
+  padding: 20px 0px 20px 0px;;
   transition: padding 0.5s ease;
 }
 .global-nav.-collapse {
@@ -276,18 +276,70 @@ mark {
 /* Text */
 
 #confine {
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-top: 3.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
-#confine-about {
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 0rem;
-  background-color: #f4f4f4;
-  width: 100%;
-  height: auto 0;
+.aboutMeRow {
+  display: flex;
+}
+.aboutMe {
+  border: 1px solid #f4f4f4;
+  padding: 24px;
+  margin: 0 0px 40px 0px;
+  border-radius: 12px;
+}
+.aboutMe p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: normal;
+}
+.aboutMe .col-md-8 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.recentItemsContainer {
+  position: absolute;
+  padding: 0px 16px;
+  bottom: 0;
+  left: 0;
+}
+.recentItemsContainer p:nth-child(3) {
+  margin-bottom: 0px;
+}
+.socialIconRow {
+  padding-top: 16px;
+}
+.socialIconRow a {
+  transition: all 0.3s ease-in-out;
+}
+.socialIconRow a:hover{
+  opacity: 0.5;
+}
+.socialIconRow img {
+  padding-right: 16px;
+}
+
+.alignContainer {
+  display: block;
+  height: 500px;
+}
+.alignContainerTop {
+  align-content: center;
+}
+
+.alignContainerBot {
+  align-content: end;
+}
+
+
+
+#about h3 {
+  color: #868686;
+  letter-spacing: -1px;
+  font-size: 24px;
+  margin-bottom: 32px;
+  margin-top: 0px;
 }
 .Home {
   margin-top: 8rem;
@@ -1081,59 +1133,10 @@ hr {
 .newInfo p {
   margin-bottom: 0px;
 }
-
-/* About */
-.about-top {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.about-section {
-  padding-top: 45px;
-}
-div .about-links {
-  padding: 0;
-  margin: 0;
-  transition: all 300ms ease-in-out;
-}
-div .about-links a {
-  position: relative;
-  display: block;
-  padding: 0 20px;
-  margin: 0 20px;
-}
-
-.about-links:hover {
-  background: #191919;
-  box-shadow: 13px 32px 36px -14px rgba(25, 25, 25, 0.22);
-  transition: all 300ms ease-in-out;
-  /* cursor: pointer; */
-}
-
-.about-links:hover a {
-  text-decoration: none;
-  color: #fafafa;
-  transition: all 300ms ease-in-out;
-}
-.h5-title {
-  margin: 1em 0;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: rgb(147, 147, 148);
-}
 .work-title {
   font-weight: 500;
   letter-spacing: -1px;
 }
-.gray-timeline {
-  font-weight: 400;
-  color: rgb(147, 147, 148);
-}
-figure {
-  text-align: center;
-  font-style: italic;
-}
-
 
 /* Universal Footer */
 .social-links {
