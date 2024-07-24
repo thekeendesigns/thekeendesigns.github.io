@@ -1323,6 +1323,14 @@ hr {
   .mobile-view {
     display: none;
   }
+  .aboutMe .col-md-4{
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .aboutMe .col-md-8{
+    flex-basis: 50%;
+    max-width: 50%;
+  }
 }
 
 /* Phone */
@@ -1379,5 +1387,10 @@ hr {
   }
   .iconRow {
     gap: 24px;
+  }
+  .recentItemsContainer {
+    display: block;
+    position: relative;
+    padding: 24px 0px; 
   }
 }
