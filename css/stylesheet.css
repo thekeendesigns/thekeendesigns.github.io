@@ -125,6 +125,25 @@ a.link-perseus:hover {
   -webkit-transition: height 0.5s ease, line-height 0.5s ease; /* Safari */
   transition: box-shadow 0.5s ease, background 0.5s ease;
 }
+#navBarMobContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction:row;
+  position: fixed;
+  top: 1%;
+  right: 2%;
+  left: 2%;
+  background: white;
+  z-index: 1;
+  border-radius: 32px;
+  border: solid 1px rgb(154, 154, 154);
+  width: 96%;
+  height: 52px;
+  padding: 0px 24px;
+  transition: all 0.3s ease;
+  -webkit-transition: height 0.5s ease, line-height 0.5s ease; /* Safari */
+  transition: box-shadow 0.5s ease, background 0.5s ease;
+}
 
 .navBarLeft {
   display: flex;
@@ -173,6 +192,10 @@ a.link-perseus:hover {
   p:hover {
     background-color: #f4f4f4;
   }
+}
+.navBarMenu {
+  display: block;
+  align-content: center;
 }
 .dropbtn {
   background-color: transparent;
@@ -1347,6 +1370,9 @@ hr {
   .mobile-view {
     display: none;
   }
+  #navBarMobContainer {
+    display: none;
+  }
 }
 
 /* Tablet */
@@ -1389,26 +1415,24 @@ hr {
     flex-basis: 50%;
     max-width: 50%;
   }
+  #navBarMobContainer {
+    display: none;
+  }
 }
 
 /* Phone */
 @media screen and (max-width: 500px) {
+  #navBarContainer {
+    display: none;
+  }
+  .menu_bar {
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+  }
   .Home .name {
     font-size: 3.5em;
-  }
-  .global-nav > .container {
-    padding: 15px;
-  }
-  .global-nav.-collapse > .container {
-    padding: 2px 20px;
-  }
-  .nav-list {
-    text-align: right;
-  }
-  .nav-list > .link {
-    display: block;
-    margin: 7px 8px;
-    font-size: 0.9em;
   }
   h1 {
     font-size: 3.5em;
