@@ -1239,7 +1239,6 @@ hr {
   padding: 16px 0px;
   position: relative;
   width: 100%;
-  z-index: 1;
 }
 #confine-about hr {
   color:black;
@@ -1373,6 +1372,9 @@ hr {
   #navBarMobContainer {
     display: none;
   }
+  .modal {
+    visibility: hidden;
+  }
 }
 
 /* Tablet */
@@ -1417,6 +1419,9 @@ hr {
   }
   #navBarMobContainer {
     display: none;
+  }
+  .modal {
+    visibility: hidden;
   }
 }
 
@@ -1474,5 +1479,68 @@ hr {
     display: block;
     position: relative;
     padding: 24px 0px; 
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 7; /* Sit on top */
+    padding-top: 65vh;/* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 24px;
+    border: 1px solid #888;
+    width: 88%;
+    height: 288px;
+  }
+  .modalTopName {
+    display: flex;
+    height: 60px;
+    overflow: hidden;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  .modalTopName a {
+    display: flex;
+  }
+  .modalTopName img {
+    align-self: center;
+    width: 48px;
+    height: 48px;
+  }
+  .modalName {
+    align-content: center;
+    flex: 0 1 80%;
+    h4 {
+      margin-bottom: 4px;
+      font-size: 20px;
+    }
+    p {
+      margin-bottom: 0px;
+      font-size: 10px;
+      color:#bababa;
+      line-height: normal;
+    }
+  }
+  /* The Close Button */
+  .closeButton {
+    color: #aaaaaa;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .closeButton:hover,
+  .closeButton:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
