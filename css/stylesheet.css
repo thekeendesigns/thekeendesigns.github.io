@@ -196,6 +196,10 @@ a.link-perseus:hover {
 .navBarMenu {
   display: block;
   align-content: center;
+  transition: all 0.3s ease;
+}
+.navBarMenu:active {
+  background-color: #fabd80;
 }
 .dropbtn {
   background-color: transparent;
@@ -1501,10 +1505,11 @@ hr {
     border: 1px solid #888;
     width: 88%;
     height: 288px;
+    flex-direction: column;
   }
   .modalTopName {
     display: flex;
-    height: 60px;
+    height: 20%;
     overflow: hidden;
     gap: 8px;
     justify-content: space-between;
@@ -1542,5 +1547,44 @@ hr {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+  .modalMiddleLinks {
+    display:flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+    h4 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 10px;
+      line-height: normal;
+      margin-bottom: 4px;
+    }
+  }
+  .modalMiddleProjects {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+
+  }
+  .copyRightMessage {
+    padding-top: 24px;
+  }
+  .modalLinks {
+    height: 10%;
+    display: flex;
+    align-items: end;
+    a {
+      font-size: 12px;
+    }
+    .downloadResume {
+      color:#afafaf;
+      border-bottom:solid 1px #404040;
+    }
+  }
+  .socialIconRowMobile {
+    margin-left: auto;
   }
 }
