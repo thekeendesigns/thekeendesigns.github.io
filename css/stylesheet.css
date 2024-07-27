@@ -1488,7 +1488,7 @@ hr {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 7; /* Sit on top */
-    padding-top: 60vh;/* Location of the box */
+    padding-top: 50vh;/* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
