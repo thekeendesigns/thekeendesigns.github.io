@@ -358,6 +358,14 @@ mark {
   padding-left: 16px;
   font-style: italic;
 }
+.quoteContainer h4 {
+  margin-bottom: 0px;
+}
+.imgAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 /* Text */
 
 #confine {
@@ -873,6 +881,12 @@ hr {
   padding-right: 16px;
   font-size: 1.2rem;
 }
+.chipNumberQuestrade{
+  color:#328636;
+  font-weight: 700;
+  padding-right: 16px;
+  font-size: 1.2rem;
+}
 #work-header {
   background-color: #ff63386e;
 }
@@ -924,9 +938,6 @@ hr {
   color: #323232;
   margin-top: 0.8rem;
   margin-bottom: 3rem;
-}
-#questrade-header {
-  background-color: #80bd84;
 }
 #questrade-header .work-title {
   padding-top: 10rem;
@@ -1144,8 +1155,24 @@ hr {
   border-radius: 8px;
   height: 100%;
 }
+.iconBoxQuest {
+  padding: 24px;
+  background-color: #f7f4f2;
+  border-radius: 8px;
+  height: 100%;
+}
+.iconBoxQuest p {
+  margin-bottom: 0px;
+}
+.iconBoxQuest img {
+  padding-bottom: 24px;
+}
 .iconBox h4 {
   color:#019583;
+  font-size: 32px;
+}
+.iconBoxQuest h4 {
+  color:#328636;
   font-size: 32px;
 }
 .iconBox p {
@@ -1171,6 +1198,25 @@ hr {
   font-size: 32px;
 }
 .challengeText p {
+  margin-bottom: 0px;
+}
+#challengeQuestrade {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+#challengeQuestrade .challengeTextQuestrade:nth-of-type(-n+2) {
+  margin-bottom: 24px;
+}
+.challengeTextQuestrade {
+  background-color: #f7f4f2;
+  padding: 24px;
+  border-radius: 12px;
+}
+.challengeTextQuestrade h3 {
+  color:#328636;
+  font-size: 32px;
+}
+.challengeTextQuestrade p {
   margin-bottom: 0px;
 }
 .researchImg {
