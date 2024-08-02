@@ -230,6 +230,9 @@ a.link-perseus:hover {
   text-decoration: none;
   display: block;
 }
+.dropdown-content a:nth-child(1) {
+  padding: 14px 6px 8px 6px;
+}
 .arrowHover {
   padding-left: 4px;
   transition: all 0.3s ease;
