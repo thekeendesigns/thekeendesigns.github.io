@@ -182,6 +182,7 @@ a.link-perseus:hover {
   display: flex;
   align-items: center;
   letter-spacing: -1;
+  gap: 16px;
   p {
     margin-bottom: 0px;
     transition: all 0.3s ease;
