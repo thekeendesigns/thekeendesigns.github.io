@@ -13,6 +13,7 @@ html {
 body {
   margin: 0;
   color: #292929;
+  cursor: none;
 }
 .no-gutter > [class*="container"] {
   padding-right: 0;
@@ -28,6 +29,14 @@ body {
   margin-left: auto;
   border-radius: 12px;
   object-fit: cover;
+}
+.newCursor {
+  position: fixed;
+  border: 2px solid #f6a308;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.2s linear, height 0.2s linear;
+  z-index: 999;
 }
 ::selection {
   color: #fcfcfc;
@@ -66,6 +75,12 @@ body {
   transform: translateY(-8px);
 }
 /* Override default a */
+a {
+  cursor: none;
+}
+img {
+  cursor: none;
+}
 a.color-link {
   color: rgb(50, 50, 50);
   text-decoration: none;
@@ -439,7 +454,7 @@ mark {
   margin-top: 0px;
 }
 .Home {
-  margin-top: 8rem;
+  padding-top: 8rem;
 }
 .container .hello {
   height: 100%;
@@ -626,7 +641,8 @@ mark {
   color: #323232;
 }
 #side p {
-  margin-bottom: 16px;
+  margin-bottom: 0px !important;
+  padding-bottom: 16px;
   color: #6D6D6D;
 }
 .side-link-title {
