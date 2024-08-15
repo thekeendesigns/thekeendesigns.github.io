@@ -1,5 +1,3 @@
-console.log('Hi, I\'m Kevin Keen. Call me Keen. Welcome to my portfolio site!');
-
 $(document).ready(function() {
     $(window).scroll( function(){ // When user scrolls, execute this JQuery function
         $('.fadein').each( function(i){
@@ -13,4 +11,19 @@ $(document).ready(function() {
             }
         }); 
     });
+});
+
+const cursor = document.querySelector('.newCursor');
+
+let size;
+document.body.addEventListener("mousemove", (ev)=>{
+    let path = ev.composedPath();
+    
+    if (path.some(x=>x.tagName == "A")) size = 40;
+    else size = 20;
+    
+    cursor.style.left   = (ev.clientX - size/2) + "px";
+    cursor.style.top    = (ev.clientY - size/2) + "px";
+    cursor.style.width  = size + "px";
+    cursor.style.height = size + "px";
 });
