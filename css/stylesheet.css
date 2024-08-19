@@ -443,9 +443,6 @@ mark {
 .alignContainerBot {
   align-content: end;
 }
-
-
-
 #about h3 {
   color: #868686;
   letter-spacing: -1px;
@@ -456,10 +453,12 @@ mark {
 .Home {
   padding-top: 8rem;
 }
+.hello-mob {
+  display: flex;
+  justify-content: end;
+}
 .container .hello {
   height: 100%;
-  flex-direction: column;
-  align-items: flex-start;
   border-radius: 999%;
 }
 #head-nav .container h3 {
@@ -1458,10 +1457,11 @@ hr {
     max-width: 100%;
   }
   h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .hello-mob {
     margin-top: 48px;
+    justify-content: left;
   }
   .col-md-offset-1 {
     margin-left: 8.33333333%;
@@ -1517,6 +1517,7 @@ hr {
   }
   .hello-mob {
     margin-top: 48px;
+    justify-content: left;
   }
   .desktop-view {
     display: none;
