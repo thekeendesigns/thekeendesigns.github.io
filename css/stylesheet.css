@@ -132,7 +132,7 @@ a.link-perseus:hover {
   background: white;
   z-index: 1;
   border-radius: 32px;
-  border: solid 1px rgb(154, 154, 154);
+  border: solid 1px rgb(229, 229, 229);
   width: 96%;
   height: 52px;
   padding: 0px 40px;
@@ -312,12 +312,12 @@ h4 {
   letter-spacing: -1px;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: -1px;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: -1px;
 }
@@ -451,7 +451,7 @@ mark {
   margin-top: 0px;
 }
 .Home {
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 .hello-mob {
   display: flex;
@@ -462,8 +462,8 @@ mark {
   border-radius: 999%;
 }
 #head-nav .container h3 {
-  color: #323232;
-  padding-left: 10px;
+  color: #878787;
+  padding-left: 0px;
   padding-top: 0px;
   display: inline-flex;
 }
@@ -474,8 +474,8 @@ mark {
 }
 #head-nav .container p {
   font-weight: 600;
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .work-thumbnail {
   position: relative;
@@ -753,8 +753,8 @@ mark {
   opacity: 50%;
 }
 hr {
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 /* Hover Effect 1 */
@@ -775,7 +775,7 @@ hr {
   -ms-transform: rotateX(90deg);
   transition: 300ms;
   opacity: 0;
-  color: rgba(50, 50, 50, 0.9);
+  color: #292929;
   height: 0;
 }
 .hover-effect:hover:after {
@@ -869,6 +869,12 @@ hr {
 #overviewValeyo {
   margin-bottom: 44px;
 }
+#overviewQuestrade {
+  margin-bottom: 44px;
+}
+#overviewPerspect {
+  margin-bottom: 44px;
+}
 #researchValeyo {
   margin-bottom: 44px;
 }
@@ -937,21 +943,6 @@ hr {
   color: #323232;
 }
 #layup-header .sub-title {
-  text-align: center;
-  font-weight: 600;
-  color: #323232;
-  margin-top: 0.8rem;
-  margin-bottom: 3rem;
-}
-#perspect-header {
-  background-color: #9ceaf7;
-}
-#perspect-header .work-title {
-  padding-top: 10rem;
-  text-align: center;
-  color: #323232;
-}
-#perspect-header .sub-title {
   text-align: center;
   font-weight: 600;
   color: #323232;
@@ -1168,6 +1159,9 @@ hr {
   flex-wrap: wrap;
   margin: 0 -16px 60px -16px;
 }
+.iconRow .caption {
+  padding: 8px 0px 0px 16px;
+}
 .iconBox {
   padding: 24px;
   background-color: #f7f4f2;
@@ -1282,10 +1276,6 @@ hr {
 }
 .newInfo p {
   margin-bottom: 0px;
-}
-.work-title {
-  font-weight: 500;
-  letter-spacing: -1px;
 }
 
 /* Universal Footer */
@@ -1459,6 +1449,9 @@ hr {
   h4 {
     font-size: 1.2rem;
   }
+  .Home {
+    padding-top: 8rem;
+  }
   .hello-mob {
     margin-top: 48px;
     justify-content: left;
@@ -1505,6 +1498,9 @@ hr {
     height: 2px;
     background-color: black;
     margin: 6px 0;
+  }
+  .Home {
+    padding-top: 6rem;
   }
   .Home .name {
     font-size: 3.5em;
@@ -1569,7 +1565,7 @@ hr {
     background-color: #fefefe;
     margin: auto;
     padding: 24px;
-    border: 1px solid #888;
+    border: 1px solid #d1d1d1;
     width: 88%;
     height: 288px;
     flex-direction: column;
