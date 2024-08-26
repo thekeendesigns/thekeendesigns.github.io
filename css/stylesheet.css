@@ -912,6 +912,12 @@ hr {
   padding-right: 16px;
   font-size: 1.2rem;
 }
+.chipNumberPerspect{
+  color:#56B1BF;
+  font-weight: 700;
+  padding-right: 16px;
+  font-size: 1.2rem;
+}
 #work-header {
   background-color: #ff63386e;
 }
@@ -1188,6 +1194,22 @@ hr {
   color:#328636;
   font-size: 32px;
 }
+.iconBoxPerspect {
+  padding: 24px;
+  background-color: #f7f4f2;
+  border-radius: 8px;
+  height: 100%;
+}
+.iconBoxPerspect p {
+  margin-bottom: 0px;
+}
+.iconBoxPerspect img {
+  padding-bottom: 24px;
+}
+.iconBoxPerspect h4 {
+  color:#56B1BF;
+  font-size: 32px;
+}
 .iconBox p {
   margin-bottom: 0px;
 }
@@ -1232,6 +1254,25 @@ hr {
 .challengeTextQuestrade p {
   margin-bottom: 0px;
 }
+#challengePerspect {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+#challengePerspect .challengeTextPerspect:nth-of-type(-n+2) {
+  margin-bottom: 24px;
+}
+.challengeTextPerspect {
+  background-color: #f7f4f2;
+  padding: 24px;
+  border-radius: 12px;
+}
+.challengeTextPerspect h3 {
+  color:#56B1BF;
+  font-size: 32px;
+}
+.challengeTextPerspect p {
+  margin-bottom: 0px;
+}
 .researchImg {
   margin: 0px 0px 0px 0px;
 }
@@ -1271,6 +1312,13 @@ hr {
   height: 8px;
   width: 8px;
   background-color: #019583;
+  border-radius: 50%;
+  display: flex;
+}
+.dotPerspect {
+  height: 8px;
+  width: 8px;
+  background-color: #56B1BF;
   border-radius: 50%;
   display: flex;
 }
