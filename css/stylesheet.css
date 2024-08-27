@@ -124,7 +124,6 @@ a.link-perseus:hover {
 #navBarContainer {
   display: flex;
   justify-content: space-between;
-  flex-direction:row;
   position: fixed;
   top: 2%;
   right: 2%;
@@ -145,7 +144,7 @@ a.link-perseus:hover {
   justify-content: space-between;
   flex-direction:row;
   position: fixed;
-  top: 1%;
+  top: 2%;
   right: 2%;
   left: 2%;
   background: white;
@@ -159,10 +158,10 @@ a.link-perseus:hover {
   -webkit-transition: height 0.5s ease, line-height 0.5s ease; /* Safari */
   transition: box-shadow 0.5s ease, background 0.5s ease;
 }
-
 .navBarLeft {
   display: flex;
   align-items: center;
+  flex: 0 0 30%;
   letter-spacing: -1;
   p, h4 {
     margin-bottom: 0px;
@@ -181,9 +180,7 @@ a.link-perseus:hover {
   }
 }
 .navBarMiddle {
-  display: flex;
   padding: 12px 0px;
-  padding-right: 8%;
   transition: all 0.3s ease;
 }
 .navBarMiddle:hover {
@@ -193,9 +190,24 @@ a.link-perseus:hover {
   width: 24px;
   height: auto;
 }
+.aboutMeJs {
+  display: flex;
+  align-items: center;
+}
+#changeAbout {
+  border-right: #ff7f00 2px solid;
+  animation: caret 1s steps(1) infinite;
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
 .navBarRight {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 30%;
   letter-spacing: -1;
   gap: 16px;
   p {
@@ -1484,6 +1496,27 @@ hr {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1024px) { 
+  .navBarLeft {
+    p {
+      font-size: 14px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+  .navBarRight {
+    p {
+      font-size: 14px;
+    }
+  }
+  .changeAboutJs {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
 /* Tablet */
 @media only screen and (min-width: 501px) and (max-width: 992px) {
   .col-md-offset-4 {
@@ -1533,6 +1566,9 @@ hr {
   }
   .modal {
     visibility: hidden;
+  }
+  .aboutMeJs {
+    display: none;
   }
 }
 
