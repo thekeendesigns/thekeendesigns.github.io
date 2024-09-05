@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded',function(event){
     // array with texts to type in typewriter
     var dataText = [
-        "Can talk (and maybe play) 🏀 all day" , 
+        "Can talk 🏀 all day" , 
         "Learning how to play pickleball", 
-        "Current show I would recommend, Peaky Blinders!",
+        "Current show he's watching, Peaky Blinders!",
         "Is scared of deep-diving",
-        "Took a bartending class, favourite cocktail being the Sangria",
-        "Favourite movie is UP!"
+        "Learned how to paint before his first word",
+        "Favourite movie is UP!",
+        "Crafts cosplay and props",
+        "Always available to connect and chat!"
     ];
     
     // type one text in the typwriter
