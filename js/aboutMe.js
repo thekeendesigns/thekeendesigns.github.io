@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded',function(event){
         "Learning how to play pickleball", 
         "Current show he's watching, Peaky Blinders!",
         "Is scared of deep-diving",
-        "Learned how to paint before his first word",
+        "Favourite anime is One Piece",
         "Favourite movie is UP!",
+        "New programs learned, Vercel and Microsoft Clarity",
         "Crafts cosplay and props",
         "Always available to connect and chat!"
     ];
