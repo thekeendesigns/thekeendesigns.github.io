@@ -5,10 +5,11 @@ document.addEventListener('DOMContentLoaded',function(event){
         "Learning how to play pickleball", 
         "Current show he's watching, Peaky Blinders!",
         "Is scared of deep-diving",
+        "Cleans the dishes before eating",
         "Favourite anime is One Piece",
         "Favourite movie is UP!",
-        "New programs learned, Vercel and Microsoft Clarity",
-        "Crafts cosplay and props",
+        "Is fascinated about WW1, WW2, and ancient history",
+        "Chinese food is his go-to comfort food",
         "Always available to connect and chat!"
     ];
     
