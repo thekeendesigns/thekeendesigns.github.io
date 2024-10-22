@@ -946,7 +946,7 @@ hr {
   margin-bottom: 3rem;
 }
 .workSelected {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   color:#ff7f00;
 }
 .sub-title p {
