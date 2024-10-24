@@ -1734,4 +1734,7 @@ hr {
   .socialIconRowMobile {
     margin-left: auto;
   }
+  .mobileSpace {
+    padding-bottom: 24px;
+  }
 }
