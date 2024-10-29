@@ -2,15 +2,15 @@ document.addEventListener('DOMContentLoaded',function(event){
     // array with texts to type in typewriter
     var dataText = [
         "Can talk 🏀 all day" , 
-        "Learning how to play pickleball", 
         "Current show he's watching, Peaky Blinders!",
         "Is scared of deep-diving",
         "Cleans the dishes before eating",
-        "Favourite anime is One Piece",
+        "Watched 188 animes and counting",
+        "Reading JJBA Jojolion",
         "Favourite movie is UP!",
         "Is fascinated about WW1, WW2, and ancient history",
         "Chinese food is his go-to comfort food",
-        "Always available to connect and chat!"
+        "Any type of lemon tea > coffee"
     ];
     
     // type one text in the typwriter
