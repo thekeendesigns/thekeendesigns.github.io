@@ -652,6 +652,7 @@ mark {
 }
 .sideRow {
   display: flex;
+  width: 33%;
 }
 .backDrop {
   display: flex;
@@ -1543,6 +1544,10 @@ hr {
   .changeAboutJs p{
     font-size: 14px;
   }
+  .sideRow {
+    display: flex;
+    width: 100%;
+  }
 }
 
 /* Tablet */
@@ -1611,6 +1616,7 @@ hr {
   }
   .sideRow {
     display: block;
+    width: 100%;
   }
 }
 
@@ -1663,6 +1669,10 @@ hr {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+  .sideRow {
+    display: block;
+    width: 100%;
   }
   .backDrop {
     padding: 16px 16px;
