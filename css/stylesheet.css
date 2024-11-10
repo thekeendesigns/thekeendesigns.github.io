@@ -661,14 +661,15 @@ mark {
   padding: 16px 32px;
   border-radius: 8px;
 }
-.backDrop:hover {
-  .hideIcon {
-    display: inline;
-    width: 16px;
-    height: 16px;
-    margin-left: 4px;
-    margin-top: -4px;
-  }
+.backDrop:hover .hideIcon {
+  display: inline;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  margin-top: -4px;
+}
+.hideIcon {
+  display: none;
 }
 .sideIcon {
   width: 32px;
@@ -686,13 +687,6 @@ mark {
   color:#8f8f8f;
   margin-bottom: 0px !important;
 }
-.hideIcon {
-  display: none;
-}
-.sideLink {
-  display: inline;
-  transition: all .25s ease;
-}
 .sideTitle {
   display: inline-block;
   margin-bottom: 0px;
@@ -701,7 +695,6 @@ mark {
   color: #323232;
 }
 .sideTitle:hover  {
-  transition: color .25s ease;
   background-color: #ededed;
   border-radius: 8px;
   padding: 4px 6px;
