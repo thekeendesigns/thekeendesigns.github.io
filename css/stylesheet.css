@@ -637,36 +637,75 @@ mark {
 #side {
   margin-top: 3rem;
   margin-bottom: 3rem;
+  h3 {
+    color: #868686;
+    letter-spacing: -1px;
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-top: 0px;
+  }
 }
-#side h3 {
-  color: #868686;
-  letter-spacing: -1px;
-  font-size: 24px;
-  margin-bottom: 32px;
-  margin-top: 0px;
+.side {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
 }
-#side h4 {
+.sideRow {
+  display: flex;
+}
+.backDrop {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfbfb;
+  justify-content: space-between;
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+.backDrop:hover {
+  .hideIcon {
+    display: inline;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    margin-top: -4px;
+  }
+}
+.sideIcon {
+  width: 32px;
+  height: 32px;
   margin-bottom: 8px;
-  letter-spacing: -1px;
-  font-size: 24px;
-  color: #323232;
 }
-#side p {
-  margin-bottom: 0px !important;
-  padding-bottom: 16px;
+.sideInfo {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
   color: #6D6D6D;
+  letter-spacing: -2%;
+  line-height: 1.5;
 }
-.side-link-title {
-  color: #323232;
-  font-weight: 600;
-  font-size: 16px;
+.sideDate {
+  color:#8f8f8f;
+  margin-bottom: 0px !important;
 }
 .hideIcon {
   display: none;
 }
-.displayIcon:hover .hideIcon {
+.sideLink {
+  display: inline;
+  transition: all .25s ease;
+}
+.sideTitle {
   display: inline-block;
-  margin-left: 8px;
+  margin-bottom: 0px;
+  letter-spacing: -1px;
+  font-size: 20px;
+  color: #323232;
+}
+.sideTitle:hover  {
+  transition: color .25s ease;
+  background-color: #ededed;
+  border-radius: 8px;
+  padding: 4px 6px;
+  margin: -4px -6px;
 }
 .tag {
   background-color:#363636;
@@ -1570,6 +1609,12 @@ hr {
   .aboutMeJs {
     display: none;
   }
+  .side {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+ 
 }
 
 /* Phone */
@@ -1614,8 +1659,16 @@ hr {
     top: 2%;
     right: 4%;
   }
-  #side .displayIcon:nth-child(-n+2) {
+  #side:nth-child(-n+2) {
     padding-bottom: 36px;
+  }
+  .side {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .backDrop {
+    padding: 16px 16px;
   }
   #workNavigation {
     display: none;

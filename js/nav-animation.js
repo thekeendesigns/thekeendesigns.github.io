@@ -1,6 +1,6 @@
 
 // work Navigation
-  $('#workNavigation li').on('click', function(){
+$('#workNavigation li').on('click', function(){
     $('#workNavigation li').removeClass('workSelected');
     $(this).addClass('workSelected');
 });
@@ -45,4 +45,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-

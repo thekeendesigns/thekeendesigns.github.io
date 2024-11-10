@@ -22,6 +22,7 @@ document.body.addEventListener("mousemove", (ev)=>{
     if (path.some(x=>x.tagName == "A")) size = 40;
     else size = 20;
     
+    
     cursor.style.left   = (ev.clientX - size/2) + "px";
     cursor.style.top    = (ev.clientY - size/2) + "px";
     cursor.style.width  = size + "px";
