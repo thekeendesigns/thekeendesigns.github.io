@@ -1485,9 +1485,8 @@ hr {
   opacity: 0;
   transform: translateY(0px);
   -webkit-transition: 0.8s; /* Safari */
-  transition: 0.8s;
+  transition: 0.8s
 }
-/* Scroll Effect */
 
 /*Desktops/Laptops*/
 @media only screen and (min-width: 1200px) {
