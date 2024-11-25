@@ -428,7 +428,7 @@ mark {
   bottom: 0;
   left: 0;
 }
-.recentItemsContainer p:nth-child(3) {
+.recentItemsContainer p:nth-child(4) {
   margin-bottom: 0px;
 }
 .socialIconRow {
@@ -1132,7 +1132,7 @@ hr {
   text-align: right;
 }
 .underline {
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   border-bottom: 2px solid transparent;
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -1145,7 +1145,7 @@ hr {
   opacity: 0.6;
 }
 .underline-orange {
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   border-bottom: 2px solid transparent;
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
