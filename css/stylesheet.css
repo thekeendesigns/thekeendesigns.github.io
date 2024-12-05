@@ -1590,6 +1590,7 @@ hr {
     }
     h4 {
       font-size: 20px;
+      padding-right: 12px;
     }
   }
   .navBarRight p{
@@ -1617,11 +1618,21 @@ hr {
   h4 {
     font-size: 1.2rem;
   }
+  #navBarContainer {
+    padding: 0px 24px;
+  }
   .navBarLeft h4{
-    font-size: 20px;
+    padding-right:0px;
+    font-size: 16px;
+  }
+  .navBarLeft p {
+    font-size: 14px;
   }
   .navBarLeft {
     flex: 0 0 52%;
+  }
+  .navBarRight p {
+    font-size: 14px;
   }
   .Home {
     padding-top: 8rem;
