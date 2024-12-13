@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded',function(event){
         // wait for a while and call this function again for next character
         setTimeout(function() {
           typeWriter(text, i + 1, fnCallback)
-        }, 50);
+        }, 1);
       }
       // text finished, call callback if there is a callback function
       else if (typeof fnCallback == 'function') {
@@ -40,13 +40,15 @@ document.addEventListener('DOMContentLoaded',function(event){
           }, 1000);
        }
       let dataAmount = dataText[i].length;
+
        // check if dataText[i] exists
-      if (i < dataAmount) {
+      if (i <= dataAmount) {
         // text exists! start typewriter animation
        typeWriter(dataText[i], 0, function(){
          // after callback (and whole text has been animated), start next text
          StartTextAnimation(i + 1);
        });
+       console.log(i);
       }
     }
     // start the text animation
