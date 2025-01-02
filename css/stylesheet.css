@@ -694,6 +694,7 @@ mark {
   letter-spacing: -1px;
   font-size: 20px;
   color: #323232;
+  transition: all 75ms ease-in;
 }
 .sideTitle:hover  {
   background-color: #ededed;
