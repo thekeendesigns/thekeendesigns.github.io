@@ -1,7 +1,6 @@
-This is my personal portfolio site showcasing works such as interaction design, visual design, and product wizardry.
+This is my personal design portfolio site showcasing works from current companies, passion projects, and interests.
 
-Your're welcome to view the source code and fork my code, but do please credit me if you are using my code for personal/commercial use.
+Your're welcome to view the source code and fork my code, but please credit me if you are using my code for personal/commercial use and/or inspiration.
 
-If interested in chatting about work, design, and Star Wars email me here @
-kevin.keen99@gmail.com
+Feel free to reach out to me at | kevin.keen99@gmail.com
 

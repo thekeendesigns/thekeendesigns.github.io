@@ -1,6 +1,6 @@
 title: Kevin Keen
 email: kevin.keen99@gmail.com
-description: "My name is Kevin Keen. Call me Keen. A eccentric Product Designer with a focus on UX/UI, visual design, product development, design systems, and data visualization."
+description: "Call me Keen. A Product/UX Designer with a focus on UX/UI, visual design, product development, design systems, and data visualization."
 url: "https://thekeendesigns.github.io/"
 
 social:
@@ -8,7 +8,7 @@ social:
   links:
     - https://www.linkedin.com/in/kevin-keen-994b20144
     - https://github.com/thekeendesigns
-    - https://www.behance.net/kevinkeen9a8a1
+    - https://dribbble.com/kkeena
 
 plugins:
   - jekyll-seo-tag
