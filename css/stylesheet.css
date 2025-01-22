@@ -510,7 +510,6 @@ mark {
   top: 10%;
   right: 55%;
   text-align: left;
-  font-size: 16px;
 }
 .bottom-text-container {
   position: absolute;
@@ -1658,12 +1657,14 @@ hr {
   .tag {
     display: none;
   }
+  .top-text-container {
+    right: 46%;
+  }
   .top-text-container h3 {
-    font-size: 16px;
+    font-size: 12px;
   }
   .top-text-container .thumbnail-title {
-    font-size: 20px;
-    line-height: 1.4;
+    font-size: 14px;
   }
   .mobile-view {
     display: none;
