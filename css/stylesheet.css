@@ -1609,6 +1609,12 @@ hr {
   .changeAboutJs p{
     font-size: 14px;
   }
+  .top-text-container h3 {
+    font-size: 14px;
+  }
+  .top-text-container .thumbnail-title {
+    font-size: 20px;
+  }
   .sideRow {
     display: flex;
     width: 100%;
