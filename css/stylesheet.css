@@ -116,11 +116,6 @@ a.link-perseus:hover {
   margin: 8px 20px;
   font-weight: 600;
 }
-.middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #navBarContainer {
   display: flex;
   justify-content: space-between;
@@ -129,7 +124,7 @@ a.link-perseus:hover {
   right: 2%;
   left: 2%;
   background: white;
-  z-index: 2;
+  z-index: 1;
   border-radius: 32px;
   border: solid 1px rgb(229, 229, 229);
   width: 96%;
