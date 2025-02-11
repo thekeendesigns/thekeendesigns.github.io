@@ -129,12 +129,12 @@ a.link-perseus:hover {
   right: 2%;
   left: 2%;
   background: white;
-  z-index: 1;
+  z-index: 2;
   border-radius: 32px;
   border: solid 1px rgb(229, 229, 229);
   width: 96%;
   height: 52px;
-  padding: 0px 40px;
+  padding: 0px 24px;
   transition: all 0.3s ease;
   -webkit-transition: height 0.5s ease, line-height 0.5s ease; /* Safari */
   transition: box-shadow 0.5s ease, background 0.5s ease;
@@ -142,7 +142,7 @@ a.link-perseus:hover {
 #navBarMobContainer {
   display: flex;
   justify-content: space-between;
-  flex-direction:row;
+  flex-direction: row;
   position: fixed;
   top: 2%;
   right: 2%;
@@ -399,10 +399,6 @@ mark {
 }
 /* Text */
 
-#confine {
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
 .aboutMeRow {
   display: flex;
 }
