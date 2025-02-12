@@ -116,18 +116,21 @@ a.link-perseus:hover {
   margin: 8px 20px;
   font-weight: 600;
 }
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #navBarContainer {
   display: flex;
   justify-content: space-between;
   position: fixed;
   top: 2%;
-  right: 2%;
-  left: 2%;
   background: white;
   z-index: 1;
   border-radius: 32px;
   border: solid 1px rgb(229, 229, 229);
-  width: 96%;
+  width: 1200px;
   height: 52px;
   padding: 0px 24px;
   transition: all 0.3s ease;
@@ -188,6 +191,8 @@ a.link-perseus:hover {
 .aboutMeJs {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex: 0 0 40%;
 }
 #changeAbout {
   border-right: #ff7f00 2px solid;
@@ -454,7 +459,7 @@ mark {
   margin-top: 0px;
 }
 .Home {
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 .hello-mob {
   display: flex;
@@ -1553,6 +1558,13 @@ hr {
     padding-right: 0px;
   }
 }
+@media only screen and (min-width: 1024px) and (max-width: 1200px) { 
+  #navBarContainer {
+    width: 96%;
+    right: 2%;
+    left: 2%;
+  }
+}
 @media only screen and (min-width: 992px) {
   /* Pushes picture left a bit */
   .col-lg-offset-1 {
@@ -1561,12 +1573,6 @@ hr {
   .col-lg-offset-6 {
     margin-left: 50%;
   }
-  /*
-  .col-lg-6 {
-    flex-basis: 43%;
-    max-width: 43%;
-  }
-  */
   .col-lg-offset-2dot5 {
     margin-left: 20.83333333%;
   }
@@ -1585,6 +1591,12 @@ hr {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) { 
+  #navBarContainer {
+    padding: 0px 24px;
+    width: 96%;
+    right: 2%;
+    left: 2%;
+  }
   .navBarLeft {
     p {
       font-size: 14px;
@@ -1627,6 +1639,9 @@ hr {
   }
   #navBarContainer {
     padding: 0px 24px;
+    width: 96%;
+    right: 2%;
+    left: 2%;
   }
   .navBarLeft h4{
     padding-right:0px;
