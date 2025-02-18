@@ -15,16 +15,33 @@ $(document).ready(function() {
 
 const cursor = document.querySelector('.newCursor');
 
-let size;
-document.body.addEventListener("mousemove", (ev)=>{
-    let path = ev.composedPath();
+let size = 20;
+let lastX = 0;
+let lastY = 0;
+
+document.body.addEventListener("mousemove", (ev) => {
+    const path = ev.composedPath();
+    const newSize = path.some(x => x.tagName === "A") ? 40 : 20;
     
-    if (path.some(x=>x.tagName == "A")) size = 40;
-    else size = 20;
+    if (size !== newSize) {
+        size = newSize;
+        cursor.style.transform = `scale(${size/20})`;
+    }
     
+    // Update cursor position with no delay
+    cursor.style.transform = `translate3d(${ev.clientX - 10}px, ${ev.clientY - 10}px, 0) scale(${size/20})`;
     
-    cursor.style.left   = (ev.clientX - size/2) + "px";
-    cursor.style.top    = (ev.clientY - size/2) + "px";
-    cursor.style.width  = size + "px";
-    cursor.style.height = size + "px";
+    // Store current position
+    lastX = ev.clientX;
+    lastY = ev.clientY;
+});
+
+// Reset trail position without transition when mouse stops
+let moveTimeout;
+document.body.addEventListener("mousemove", () => {
+    clearTimeout(moveTimeout);
+    moveTimeout = setTimeout(() => {
+        trail.style.transition = 'none';
+        trail.style.opacity = '0';
+    }, 50);
 });

@@ -13,7 +13,6 @@ html {
 body {
   margin: 0;
   color: #292929;
-  cursor: none;
 }
 .no-gutter > [class*="container"] {
   padding-right: 0;
@@ -32,11 +31,18 @@ body {
 }
 .newCursor {
   position: fixed;
-  border: 2px solid #f6a308;
-  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ff7f00;
+  border-radius: 50%; /* Makes it circular */
   pointer-events: none;
-  transition: width 0.2s linear, height 0.2s linear;
-  z-index: 999;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  z-index: 9999;
+  transform: translate3d(0, 0, 0);
+}
+a, img {
+  cursor: pointer !important;
 }
 ::selection {
   color: #fcfcfc;
