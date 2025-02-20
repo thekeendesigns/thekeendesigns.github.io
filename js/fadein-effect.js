@@ -35,13 +35,3 @@ document.body.addEventListener("mousemove", (ev) => {
     lastX = ev.clientX;
     lastY = ev.clientY;
 });
-
-// Reset trail position without transition when mouse stops
-let moveTimeout;
-document.body.addEventListener("mousemove", () => {
-    clearTimeout(moveTimeout);
-    moveTimeout = setTimeout(() => {
-        trail.style.transition = 'none';
-        trail.style.opacity = '0';
-    }, 50);
-});
