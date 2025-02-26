@@ -115,6 +115,10 @@ a.link-perseus:hover {
   color: #081338;
   text-decoration: none;
 }
+a.link-gfl:hover {
+  color: #A3DD00;
+  text-decoration: none;
+}
 
 /*     Navbar      */
 .link {
@@ -289,6 +293,9 @@ a.link-perseus:hover {
 }
 .link-perseus {
   color:#081338;
+}
+.link-gfl {
+  color:#A3DD00;
 }
 /* Work Arrow */
 .arrow1 {
