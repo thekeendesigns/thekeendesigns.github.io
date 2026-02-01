@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', function(event) {
   var dataText = [
       "Can talk 🏀 all day", 
-      "Favourite show this year was Peaky Blinders",
+      "Favourite show this year was The Boyfriend",
       "Is scared of deep-diving",
       "Cleans the dishes before eating",
-      "Watched 188 animes and counting",
+      "Has watched 188+ animes",
       "Collector of coke memorabilia",
       "Reading JJBA Jojolion",
       "Favourite movie is UP!",
-      "Is fascinated about WW1, WW2, and ancient history",
+      "Is fascinated about ancient history",
       "Chinese is his comfort food",
+      "Has constantly chapped lips",
       "Lemon tea > coffee"
   ];
 
